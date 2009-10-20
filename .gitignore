@@ -1,1 +1,5 @@
-Installer
+Installer/Mac
+Installer/Windows/root
+JamomaC74.wxs
+*.wixobj
+*.msi
