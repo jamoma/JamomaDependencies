@@ -19,23 +19,78 @@ Dir.chdir wd
 wd = Dir.pwd
 require "support/jamomalib"   # C74 build library
 
-@temp = "#{@installers}/temp"
+# paths
+if win32?
 
+  @temp = "Installer/Windows"
+  @root = "#{@temp}/root"
+  @c74 = "#{@root}/Cycling '74/#{@name}"
+
+else
+
+  @temp = "Installer/Mac"
+  @root = "#{@temp}/root"
+  @c74 = "#{@root}/Applications/Max5/Cycling '74/#{@name}"
+  @dmgroot = "#{@temp}/#{@name}"
+
+end
 
 ###################################################################
 
 if win32?
+
+  puts " "
+  puts "  Preparing files..."
+
+  # cleanup
+  `rm -rfv #{@root}`
+  `rm -f "#{@temp}"/*.wixobj`
+  `rm -f "#{@temp}"/Jamoma*.wxs`
+  `rm -f "#{@temp}"/#{@name}.msi`
+
+  # dir structure
+  `mkdir -pv "#{@c74}"`
+
+  # copying
+  `cp -r Max/WinXP/*  "#{@c74}"`
+
+  puts " "
+  puts " Setting Version Number in Wix Source"
+
+  # version
+  f = File.open("#{@temp}/main.wxs", "r+")
+  str = f.read
+  str.gsub!(/Version="(.*)"/, "Version=\"#{@version}\"")
+  f.rewind
+  f.write(str)
+  f.close
+
+  puts " "
+  puts " Building installer pkg..."
+
+  # pkg building
+
+  puts "   Making candle with paraffin"
+  Dir.chdir "#{@temp}"
+  puts `../../support/wix/Paraffin.exe -dir "root/Cycling '74"	-custom JamomaC74	-g -direXclude .svn -ext .WXS JamomaC74.wxs`
+
+  puts "   Compiling Wix Sources..."
+  puts `../../support/wix/candle.exe -dvar.ProductVersion="#{@version}" -dvar.ProductName="#{@name} #{@version}" /nologo JamomaC74.wxs`
+  puts `../../support/wix/candle.exe -dvar.ProductVersion="#{@version}" -dvar.ProductName="#{@name} #{@version}" /nologo main.wxs`
+  puts `../../support/wix/candle.exe -dvar.ProductVersion="#{@version}" -dvar.ProductName="#{@name} #{@version}" /nologo ui.wxs` 
   
-  # someone needs to make an installer for windows
-  
+  puts "   Now making the installer" 
+  puts `../../support/wix/light.exe /nologo /out #{@name}.msi main.wixobj JamomaC74.wixobj ui.wixobj ../../support/wix/wixui.wixlib -loc ../../support/wix/WixUI_en-us.wxl`
+
+  # distribution
+  puts "  Assembling zip..."
+  `rm -rfv \"Installer/#{@name}-#{@version}.dmg\"`
+  `hdiutil create -srcfolder "#{@dmgroot}" "Installer/#{@name}-#{@version}.dmg"`
+
 else
   
   # commands
   @cp = "/Developer/usr/bin/CpMac"
-  # paths
-  @root = "Installer/temp/root"
-  @c74 = "#{@root}/Applications/Max5/Cycling '74/JamomaDependencies"
-  @dmgroot = "Installer/temp/JamomaDependencies"
 
   # cleanup
   puts "  preparing files..."
