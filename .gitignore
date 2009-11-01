@@ -3,3 +3,4 @@ Installer/Windows/root
 JamomaC74.wxs
 *.wixobj
 *.msi
+.DS_Store
