@@ -1,0 +1,2306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ambiscore>
+<trajectory index="figure1">
+	<point>
+		<time>0</time>
+		<xyz>0.338095 0.725046 0.000000</xyz>
+	</point>
+	<point>
+		<time>100</time>
+		<xyz>0.350833 0.725046 -0.140127</xyz>
+	</point>
+	<point>
+		<time>200</time>
+		<xyz>0.287139 0.725046 -0.229299</xyz>
+	</point>
+	<point>
+		<time>300</time>
+		<xyz>0.210706 0.725046 -0.305732</xyz>
+	</point>
+	<point>
+		<time>400</time>
+		<xyz>-0.069549 0.725046 -0.484076</xyz>
+	</point>
+	<point>
+		<time>531</time>
+		<xyz>-0.158721 0.725046 -0.484076</xyz>
+	</point>
+	<point>
+		<time>631</time>
+		<xyz>-0.413498 0.725046 -0.152866</xyz>
+	</point>
+	<point>
+		<time>731</time>
+		<xyz>-0.451714 0.725046 -0.050955</xyz>
+	</point>
+	<point>
+		<time>831</time>
+		<xyz>-0.451714 0.725046 0.038217</xyz>
+	</point>
+	<point>
+		<time>931</time>
+		<xyz>-0.413498 0.725046 0.191083</xyz>
+	</point>
+	<point>
+		<time>1031</time>
+		<xyz>-0.337065 0.725046 0.292994</xyz>
+	</point>
+	<point>
+		<time>1162</time>
+		<xyz>-0.286109 0.725046 0.331210</xyz>
+	</point>
+	<point>
+		<time>1262</time>
+		<xyz>-0.209676 0.725046 0.343949</xyz>
+	</point>
+	<point>
+		<time>1362</time>
+		<xyz>-0.107765 0.725046 0.356688</xyz>
+	</point>
+	<point>
+		<time>1462</time>
+		<xyz>-0.056810 0.725046 0.356688</xyz>
+	</point>
+	<point>
+		<time>1562</time>
+		<xyz>-0.018593 0.725046 0.369427</xyz>
+	</point>
+	<point>
+		<time>1662</time>
+		<xyz>0.006884 0.725046 0.433121</xyz>
+	</point>
+	<point>
+		<time>1762</time>
+		<xyz>0.006884 0.725046 0.484076</xyz>
+	</point>
+	<point>
+		<time>1862</time>
+		<xyz>-0.031332 0.725046 0.522293</xyz>
+	</point>
+	<point>
+		<time>2062</time>
+		<xyz>-0.082288 0.725046 0.522293</xyz>
+	</point>
+	<point>
+		<time>2162</time>
+		<xyz>-0.120504 0.725046 0.484076</xyz>
+	</point>
+	<point>
+		<time>2262</time>
+		<xyz>-0.107765 0.725046 0.420382</xyz>
+	</point>
+	<point>
+		<time>2362</time>
+		<xyz>0.045101 0.725046 0.292994</xyz>
+	</point>
+	<point>
+		<time>2462</time>
+		<xyz>0.096056 0.725046 0.280255</xyz>
+	</point>
+	<point>
+		<time>3762</time>
+		<xyz>0.108795 0.712307 0.280255</xyz>
+	</point>
+	<point>
+		<time>3862</time>
+		<xyz>0.223445 0.470269 0.280255</xyz>
+	</point>
+	<point>
+		<time>3962</time>
+		<xyz>0.236184 0.406575 0.280255</xyz>
+	</point>
+	<point>
+		<time>4062</time>
+		<xyz>0.236184 0.304664 0.280255</xyz>
+	</point>
+	<point>
+		<time>4162</time>
+		<xyz>0.019623 -0.102979 0.280255</xyz>
+	</point>
+	<point>
+		<time>4262</time>
+		<xyz>-0.095026 -0.204890 0.280255</xyz>
+	</point>
+	<point>
+		<time>4362</time>
+		<xyz>-0.133243 -0.294062 0.280255</xyz>
+	</point>
+	<point>
+		<time>4462</time>
+		<xyz>-0.145982 -0.345017 0.280255</xyz>
+	</point>
+	<point>
+		<time>4562</time>
+		<xyz>-0.082288 -0.408712 0.280255</xyz>
+	</point>
+	<point>
+		<time>4662</time>
+		<xyz>-0.031332 -0.446928 0.280255</xyz>
+	</point>
+	<point>
+		<time>4762</time>
+		<xyz>-0.018593 -0.497884 0.280255</xyz>
+	</point>
+	<point>
+		<time>4862</time>
+		<xyz>-0.031332 -0.536100 0.280255</xyz>
+	</point>
+	<point>
+		<time>4962</time>
+		<xyz>-0.209676 -0.625272 0.280255</xyz>
+	</point>
+	<point>
+		<time>5062</time>
+		<xyz>-0.286109 -0.536100 0.280255</xyz>
+	</point>
+	<point>
+		<time>5162</time>
+		<xyz>-0.286109 -0.230368 0.280255</xyz>
+	</point>
+	<point>
+		<time>5262</time>
+		<xyz>0.070579 -0.064763 0.280255</xyz>
+	</point>
+	<point>
+		<time>5362</time>
+		<xyz>0.248923 0.062626 0.280255</xyz>
+	</point>
+	<point>
+		<time>5462</time>
+		<xyz>0.287139 0.151798 0.280255</xyz>
+	</point>
+	<point>
+		<time>5562</time>
+		<xyz>0.248923 0.253709 0.280255</xyz>
+	</point>
+	<point>
+		<time>5662</time>
+		<xyz>-0.031332 0.393836 0.280255</xyz>
+	</point>
+	<point>
+		<time>5762</time>
+		<xyz>-0.133243 0.240970 0.280255</xyz>
+	</point>
+	<point>
+		<time>5862</time>
+		<xyz>-0.133243 -0.026546 0.280255</xyz>
+	</point>
+	<point>
+		<time>5962</time>
+		<xyz>0.147012 -0.281323 0.280255</xyz>
+	</point>
+	<point>
+		<time>6062</time>
+		<xyz>0.427267 -0.497884 0.280255</xyz>
+	</point>
+	<point>
+		<time>6162</time>
+		<xyz>0.529177 -0.688966 0.280255</xyz>
+	</point>
+	<point>
+		<time>6262</time>
+		<xyz>0.529177 -0.714444 0.280255</xyz>
+	</point>
+	<point>
+		<time>6362</time>
+		<xyz>-0.145982 -0.778138 0.280255</xyz>
+	</point>
+	<point>
+		<time>6462</time>
+		<xyz>-0.540886 -0.434189 0.280255</xyz>
+	</point>
+	<point>
+		<time>6562</time>
+		<xyz>-0.604581 0.024409 0.280255</xyz>
+	</point>
+	<point>
+		<time>6662</time>
+		<xyz>-0.184198 0.368358 0.280255</xyz>
+	</point>
+	<point>
+		<time>6762</time>
+		<xyz>0.057840 0.584919 0.280255</xyz>
+	</point>
+	<point>
+		<time>6862</time>
+		<xyz>-0.056810 0.623135 0.280255</xyz>
+	</point>
+	<point>
+		<time>6962</time>
+		<xyz>-0.859358 0.674091 0.280255</xyz>
+	</point>
+	<point>
+		<time>8562</time>
+		<xyz>-0.744708 0.674091 0.471338</xyz>
+	</point>
+	<point>
+		<time>8662</time>
+		<xyz>-0.426237 0.674091 0.713376</xyz>
+	</point>
+	<point>
+		<time>8762</time>
+		<xyz>-0.337065 0.674091 0.777070</xyz>
+	</point>
+	<point>
+		<time>8862</time>
+		<xyz>-0.286109 0.674091 0.802548</xyz>
+	</point>
+	<point>
+		<time>8962</time>
+		<xyz>-0.247893 0.674091 0.815287</xyz>
+	</point>
+	<point>
+		<time>9062</time>
+		<xyz>-0.222415 0.674091 0.866242</xyz>
+	</point>
+	<point>
+		<time>9162</time>
+		<xyz>-0.184198 0.674091 0.904459</xyz>
+	</point>
+	<point>
+		<time>9262</time>
+		<xyz>-0.158721 0.674091 0.904459</xyz>
+	</point>
+	<point>
+		<time>9362</time>
+		<xyz>-0.145982 0.674091 0.904459</xyz>
+	</point>
+	<point>
+		<time>9462</time>
+		<xyz>-0.082288 0.674091 0.764331</xyz>
+	</point>
+	<point>
+		<time>9588</time>
+		<xyz>-0.031332 0.674091 0.611465</xyz>
+	</point>
+	<point>
+		<time>9688</time>
+		<xyz>-0.018593 0.674091 0.076433</xyz>
+	</point>
+	<point>
+		<time>9788</time>
+		<xyz>-0.018593 0.674091 -0.318471</xyz>
+	</point>
+	<point>
+		<time>9888</time>
+		<xyz>-0.018593 0.674091 -0.522293</xyz>
+	</point>
+	<point>
+		<time>9988</time>
+		<xyz>-0.018593 0.674091 -0.598726</xyz>
+	</point>
+	<point>
+		<time>10088</time>
+		<xyz>-0.018593 0.674091 -0.700637</xyz>
+	</point>
+	<point>
+		<time>10188</time>
+		<xyz>-0.018593 0.674091 -0.738854</xyz>
+	</point>
+	<point>
+		<time>10288</time>
+		<xyz>-0.005854 0.674091 -0.777070</xyz>
+	</point>
+	<point>
+		<time>10388</time>
+		<xyz>-0.005854 0.674091 -0.802548</xyz>
+	</point>
+</trajectory>
+<trajectory index="figure2">
+	<point>
+		<time>0</time>
+		<xyz>-0.011905 0.616713 0.000000</xyz>
+	</point>
+	<point>
+		<time>100</time>
+		<xyz>-0.103572 0.591713 0.000000</xyz>
+	</point>
+	<point>
+		<time>200</time>
+		<xyz>-0.120238 0.575046 0.000000</xyz>
+	</point>
+	<point>
+		<time>300</time>
+		<xyz>-0.153572 0.533379 0.000000</xyz>
+	</point>
+	<point>
+		<time>400</time>
+		<xyz>-0.186905 0.491713 0.000000</xyz>
+	</point>
+	<point>
+		<time>500</time>
+		<xyz>-0.211905 0.441713 0.000000</xyz>
+	</point>
+	<point>
+		<time>600</time>
+		<xyz>-0.236905 0.400046 0.000000</xyz>
+	</point>
+	<point>
+		<time>700</time>
+		<xyz>-0.245238 0.375046 0.000000</xyz>
+	</point>
+	<point>
+		<time>800</time>
+		<xyz>-0.270238 0.341713 0.000000</xyz>
+	</point>
+	<point>
+		<time>900</time>
+		<xyz>-0.295238 0.316713 0.000000</xyz>
+	</point>
+	<point>
+		<time>1000</time>
+		<xyz>-0.311905 0.291713 0.000000</xyz>
+	</point>
+	<point>
+		<time>1100</time>
+		<xyz>-0.328572 0.250046 0.000000</xyz>
+	</point>
+	<point>
+		<time>1200</time>
+		<xyz>-0.336905 0.225046 0.000000</xyz>
+	</point>
+	<point>
+		<time>1300</time>
+		<xyz>-0.353572 0.191713 0.000000</xyz>
+	</point>
+	<point>
+		<time>1400</time>
+		<xyz>-0.361905 0.150046 0.000000</xyz>
+	</point>
+	<point>
+		<time>1500</time>
+		<xyz>-0.378572 0.116713 0.000000</xyz>
+	</point>
+	<point>
+		<time>1600</time>
+		<xyz>-0.386905 0.091713 0.000000</xyz>
+	</point>
+	<point>
+		<time>1700</time>
+		<xyz>-0.395238 0.075046 0.000000</xyz>
+	</point>
+	<point>
+		<time>1800</time>
+		<xyz>-0.403572 0.050046 0.000000</xyz>
+	</point>
+	<point>
+		<time>1900</time>
+		<xyz>-0.420238 0.025046 0.000000</xyz>
+	</point>
+	<point>
+		<time>2000</time>
+		<xyz>-0.428572 0.000046 0.000000</xyz>
+	</point>
+	<point>
+		<time>2100</time>
+		<xyz>-0.445238 -0.024954 0.000000</xyz>
+	</point>
+	<point>
+		<time>2200</time>
+		<xyz>-0.445238 -0.041621 0.000000</xyz>
+	</point>
+	<point>
+		<time>2300</time>
+		<xyz>-0.445238 -0.049954 0.000000</xyz>
+	</point>
+	<point>
+		<time>2400</time>
+		<xyz>-0.445238 -0.058287 0.000000</xyz>
+	</point>
+	<point>
+		<time>2500</time>
+		<xyz>-0.453572 -0.091621 0.000000</xyz>
+	</point>
+	<point>
+		<time>2600</time>
+		<xyz>-0.453572 -0.108287 0.000000</xyz>
+	</point>
+	<point>
+		<time>2700</time>
+		<xyz>-0.453572 -0.133287 0.000000</xyz>
+	</point>
+	<point>
+		<time>2800</time>
+		<xyz>-0.453572 -0.158287 0.000000</xyz>
+	</point>
+	<point>
+		<time>2900</time>
+		<xyz>-0.453572 -0.191621 0.000000</xyz>
+	</point>
+	<point>
+		<time>3000</time>
+		<xyz>-0.453572 -0.224954 0.000000</xyz>
+	</point>
+	<point>
+		<time>3100</time>
+		<xyz>-0.436905 -0.249954 0.000000</xyz>
+	</point>
+	<point>
+		<time>3200</time>
+		<xyz>-0.403572 -0.283287 0.000000</xyz>
+	</point>
+	<point>
+		<time>3300</time>
+		<xyz>-0.428572 -0.299954 0.016667</xyz>
+	</point>
+	<point>
+		<time>3400</time>
+		<xyz>-0.370238 -0.324954 0.025000</xyz>
+	</point>
+	<point>
+		<time>3500</time>
+		<xyz>-0.320238 -0.324954 0.066667</xyz>
+	</point>
+	<point>
+		<time>3600</time>
+		<xyz>-0.253572 -0.341621 0.133333</xyz>
+	</point>
+	<point>
+		<time>3700</time>
+		<xyz>-0.178572 -0.366621 0.225000</xyz>
+	</point>
+	<point>
+		<time>3800</time>
+		<xyz>-0.095238 -0.366621 0.325000</xyz>
+	</point>
+	<point>
+		<time>3900</time>
+		<xyz>-0.045238 -0.366621 0.391667</xyz>
+	</point>
+	<point>
+		<time>4000</time>
+		<xyz>0.013095 -0.366621 0.641667</xyz>
+	</point>
+	<point>
+		<time>4100</time>
+		<xyz>0.046428 -0.366621 0.375000</xyz>
+	</point>
+	<point>
+		<time>4200</time>
+		<xyz>0.079762 -0.366621 0.275000</xyz>
+	</point>
+	<point>
+		<time>4300</time>
+		<xyz>0.104762 -0.366621 0.216667</xyz>
+	</point>
+	<point>
+		<time>4400</time>
+		<xyz>0.163095 -0.366621 0.150000</xyz>
+	</point>
+	<point>
+		<time>4500</time>
+		<xyz>0.213095 -0.366621 0.083333</xyz>
+	</point>
+	<point>
+		<time>4600</time>
+		<xyz>0.263095 -0.366621 0.016667</xyz>
+	</point>
+	<point>
+		<time>4700</time>
+		<xyz>0.296428 -0.349954 0.016667</xyz>
+	</point>
+	<point>
+		<time>4800</time>
+		<xyz>0.338095 -0.333287 0.000000</xyz>
+	</point>
+	<point>
+		<time>4900</time>
+		<xyz>0.371428 -0.324954 0.000000</xyz>
+	</point>
+	<point>
+		<time>5000</time>
+		<xyz>0.396428 -0.308287 0.000000</xyz>
+	</point>
+	<point>
+		<time>5100</time>
+		<xyz>0.421428 -0.291621 0.000000</xyz>
+	</point>
+	<point>
+		<time>5200</time>
+		<xyz>0.438095 -0.291621 0.000000</xyz>
+	</point>
+	<point>
+		<time>5300</time>
+		<xyz>0.454762 -0.266621 0.000000</xyz>
+	</point>
+	<point>
+		<time>5400</time>
+		<xyz>0.479762 -0.249954 0.000000</xyz>
+	</point>
+	<point>
+		<time>5500</time>
+		<xyz>0.513095 -0.224954 0.000000</xyz>
+	</point>
+	<point>
+		<time>5600</time>
+		<xyz>0.529762 -0.191621 0.000000</xyz>
+	</point>
+	<point>
+		<time>5700</time>
+		<xyz>0.546428 -0.174954 0.000000</xyz>
+	</point>
+	<point>
+		<time>5800</time>
+		<xyz>0.563095 -0.141621 0.000000</xyz>
+	</point>
+	<point>
+		<time>5900</time>
+		<xyz>0.579762 -0.108287 0.000000</xyz>
+	</point>
+	<point>
+		<time>6000</time>
+		<xyz>0.579762 -0.083287 0.000000</xyz>
+	</point>
+	<point>
+		<time>6100</time>
+		<xyz>0.579762 -0.058287 0.000000</xyz>
+	</point>
+	<point>
+		<time>6200</time>
+		<xyz>0.579762 -0.024954 0.000000</xyz>
+	</point>
+	<point>
+		<time>6300</time>
+		<xyz>0.554762 0.008379 0.000000</xyz>
+	</point>
+	<point>
+		<time>6400</time>
+		<xyz>0.546428 0.033379 0.000000</xyz>
+	</point>
+	<point>
+		<time>6500</time>
+		<xyz>0.538095 0.058379 0.000000</xyz>
+	</point>
+	<point>
+		<time>6600</time>
+		<xyz>0.521428 0.091713 0.000000</xyz>
+	</point>
+	<point>
+		<time>6700</time>
+		<xyz>0.488095 0.133379 0.000000</xyz>
+	</point>
+	<point>
+		<time>6800</time>
+		<xyz>0.463095 0.175046 0.000000</xyz>
+	</point>
+	<point>
+		<time>6900</time>
+		<xyz>0.446428 0.208379 0.000000</xyz>
+	</point>
+	<point>
+		<time>7000</time>
+		<xyz>0.429762 0.225046 0.000000</xyz>
+	</point>
+	<point>
+		<time>7100</time>
+		<xyz>0.404762 0.275046 0.000000</xyz>
+	</point>
+	<point>
+		<time>7200</time>
+		<xyz>0.363095 0.316713 0.000000</xyz>
+	</point>
+	<point>
+		<time>7300</time>
+		<xyz>0.329762 0.341713 0.000000</xyz>
+	</point>
+	<point>
+		<time>7400</time>
+		<xyz>0.304762 0.391713 0.000000</xyz>
+	</point>
+	<point>
+		<time>7500</time>
+		<xyz>0.279762 0.416713 0.000000</xyz>
+	</point>
+	<point>
+		<time>7600</time>
+		<xyz>0.271428 0.441713 0.000000</xyz>
+	</point>
+	<point>
+		<time>7700</time>
+		<xyz>0.263095 0.458379 0.000000</xyz>
+	</point>
+	<point>
+		<time>7800</time>
+		<xyz>0.238095 0.483379 0.000000</xyz>
+	</point>
+	<point>
+		<time>7900</time>
+		<xyz>0.213095 0.516713 0.000000</xyz>
+	</point>
+	<point>
+		<time>8000</time>
+		<xyz>0.179762 0.541713 0.000000</xyz>
+	</point>
+	<point>
+		<time>8100</time>
+		<xyz>0.154762 0.558379 0.000000</xyz>
+	</point>
+	<point>
+		<time>8200</time>
+		<xyz>0.129762 0.566713 0.000000</xyz>
+	</point>
+	<point>
+		<time>8400</time>
+		<xyz>0.021428 0.600046 0.000000</xyz>
+	</point>
+	<point>
+		<time>8500</time>
+		<xyz>0.013095 0.600046 0.000000</xyz>
+	</point>
+	<point>
+		<time>8800</time>
+		<xyz>-0.003572 0.600046 0.000000</xyz>
+	</point>
+</trajectory>
+<trajectory index="figure3">
+	<point>
+		<time>0</time>
+		<xyz>0.338095 0.725046 0.000000</xyz>
+	</point>
+	<point>
+		<time>100</time>
+		<xyz>0.304762 0.725046 0.000000</xyz>
+	</point>
+	<point>
+		<time>200</time>
+		<xyz>0.254762 0.725046 0.000000</xyz>
+	</point>
+	<point>
+		<time>300</time>
+		<xyz>0.204762 0.725046 0.000000</xyz>
+	</point>
+	<point>
+		<time>400</time>
+		<xyz>0.146428 0.725046 0.000000</xyz>
+	</point>
+	<point>
+		<time>500</time>
+		<xyz>0.088095 0.725046 0.000000</xyz>
+	</point>
+	<point>
+		<time>600</time>
+		<xyz>0.029762 0.725046 0.000000</xyz>
+	</point>
+	<point>
+		<time>700</time>
+		<xyz>-0.003572 0.725046 0.000000</xyz>
+	</point>
+	<point>
+		<time>800</time>
+		<xyz>-0.086905 0.716713 0.000000</xyz>
+	</point>
+	<point>
+		<time>900</time>
+		<xyz>-0.161905 0.708379 0.000000</xyz>
+	</point>
+	<point>
+		<time>1000</time>
+		<xyz>-0.236905 0.700046 0.000000</xyz>
+	</point>
+	<point>
+		<time>1100</time>
+		<xyz>-0.261905 0.691713 0.000000</xyz>
+	</point>
+	<point>
+		<time>1200</time>
+		<xyz>-0.278572 0.675046 0.000000</xyz>
+	</point>
+	<point>
+		<time>1300</time>
+		<xyz>-0.320238 0.650046 0.000000</xyz>
+	</point>
+	<point>
+		<time>1400</time>
+		<xyz>-0.345238 0.608379 0.000000</xyz>
+	</point>
+	<point>
+		<time>1500</time>
+		<xyz>-0.361905 0.575046 0.000000</xyz>
+	</point>
+	<point>
+		<time>1600</time>
+		<xyz>-0.378572 0.533379 0.000000</xyz>
+	</point>
+	<point>
+		<time>1700</time>
+		<xyz>-0.403572 0.508379 0.000000</xyz>
+	</point>
+	<point>
+		<time>1800</time>
+		<xyz>-0.403572 0.458379 0.000000</xyz>
+	</point>
+	<point>
+		<time>1900</time>
+		<xyz>-0.403572 0.408379 0.000000</xyz>
+	</point>
+	<point>
+		<time>2000</time>
+		<xyz>-0.411905 0.366713 0.000000</xyz>
+	</point>
+	<point>
+		<time>2100</time>
+		<xyz>-0.411905 0.308379 0.000000</xyz>
+	</point>
+	<point>
+		<time>2200</time>
+		<xyz>-0.411905 0.266713 0.000000</xyz>
+	</point>
+	<point>
+		<time>2300</time>
+		<xyz>-0.420238 0.216713 0.000000</xyz>
+	</point>
+	<point>
+		<time>2400</time>
+		<xyz>-0.420238 0.183379 0.000000</xyz>
+	</point>
+	<point>
+		<time>2500</time>
+		<xyz>-0.420238 0.150046 0.000000</xyz>
+	</point>
+	<point>
+		<time>2600</time>
+		<xyz>-0.420238 0.125046 0.000000</xyz>
+	</point>
+	<point>
+		<time>2700</time>
+		<xyz>-0.420238 0.091713 0.000000</xyz>
+	</point>
+	<point>
+		<time>2800</time>
+		<xyz>-0.411905 0.016713 0.000000</xyz>
+	</point>
+	<point>
+		<time>2900</time>
+		<xyz>-0.403572 -0.033287 0.000000</xyz>
+	</point>
+	<point>
+		<time>3000</time>
+		<xyz>-0.395238 -0.141621 0.000000</xyz>
+	</point>
+	<point>
+		<time>3100</time>
+		<xyz>-0.386905 -0.191621 0.000000</xyz>
+	</point>
+	<point>
+		<time>3200</time>
+		<xyz>-0.386905 -0.216621 0.000000</xyz>
+	</point>
+	<point>
+		<time>3300</time>
+		<xyz>-0.386905 -0.249954 0.000000</xyz>
+	</point>
+	<point>
+		<time>3400</time>
+		<xyz>-0.378572 -0.349954 0.000000</xyz>
+	</point>
+	<point>
+		<time>3500</time>
+		<xyz>-0.361905 -0.424954 0.000000</xyz>
+	</point>
+	<point>
+		<time>3600</time>
+		<xyz>-0.361905 -0.449954 0.000000</xyz>
+	</point>
+	<point>
+		<time>3700</time>
+		<xyz>-0.345238 -0.474954 0.000000</xyz>
+	</point>
+	<point>
+		<time>3800</time>
+		<xyz>-0.336905 -0.508287 0.000000</xyz>
+	</point>
+	<point>
+		<time>3900</time>
+		<xyz>-0.328572 -0.533287 0.000000</xyz>
+	</point>
+	<point>
+		<time>4000</time>
+		<xyz>-0.303572 -0.558287 0.000000</xyz>
+	</point>
+	<point>
+		<time>4100</time>
+		<xyz>-0.261905 -0.599954 0.000000</xyz>
+	</point>
+	<point>
+		<time>4200</time>
+		<xyz>-0.236905 -0.616621 0.000000</xyz>
+	</point>
+	<point>
+		<time>4300</time>
+		<xyz>-0.220238 -0.649954 0.000000</xyz>
+	</point>
+	<point>
+		<time>4400</time>
+		<xyz>-0.186905 -0.674954 0.000000</xyz>
+	</point>
+	<point>
+		<time>4500</time>
+		<xyz>-0.161905 -0.708287 0.000000</xyz>
+	</point>
+	<point>
+		<time>4600</time>
+		<xyz>-0.145238 -0.716621 0.000000</xyz>
+	</point>
+	<point>
+		<time>4700</time>
+		<xyz>-0.111905 -0.724954 0.000000</xyz>
+	</point>
+	<point>
+		<time>4800</time>
+		<xyz>-0.045238 -0.749954 0.000000</xyz>
+	</point>
+	<point>
+		<time>4900</time>
+		<xyz>-0.028572 -0.749954 0.000000</xyz>
+	</point>
+	<point>
+		<time>5000</time>
+		<xyz>0.013095 -0.749954 0.000000</xyz>
+	</point>
+	<point>
+		<time>5100</time>
+		<xyz>0.046428 -0.749954 0.000000</xyz>
+	</point>
+	<point>
+		<time>5200</time>
+		<xyz>0.071428 -0.749954 0.000000</xyz>
+	</point>
+	<point>
+		<time>5300</time>
+		<xyz>0.096428 -0.749954 0.000000</xyz>
+	</point>
+	<point>
+		<time>5400</time>
+		<xyz>0.121428 -0.733287 0.000000</xyz>
+	</point>
+	<point>
+		<time>5500</time>
+		<xyz>0.146428 -0.724954 0.000000</xyz>
+	</point>
+	<point>
+		<time>5600</time>
+		<xyz>0.179762 -0.699954 0.000000</xyz>
+	</point>
+	<point>
+		<time>5700</time>
+		<xyz>0.213095 -0.691621 0.000000</xyz>
+	</point>
+	<point>
+		<time>5800</time>
+		<xyz>0.221428 -0.674954 0.000000</xyz>
+	</point>
+	<point>
+		<time>5900</time>
+		<xyz>0.254762 -0.649954 0.000000</xyz>
+	</point>
+	<point>
+		<time>6000</time>
+		<xyz>0.279762 -0.633287 0.000000</xyz>
+	</point>
+	<point>
+		<time>6100</time>
+		<xyz>0.296428 -0.599954 0.000000</xyz>
+	</point>
+	<point>
+		<time>6200</time>
+		<xyz>0.304762 -0.574954 0.000000</xyz>
+	</point>
+	<point>
+		<time>6300</time>
+		<xyz>0.313095 -0.541621 0.000000</xyz>
+	</point>
+	<point>
+		<time>6400</time>
+		<xyz>0.321428 -0.508287 0.000000</xyz>
+	</point>
+	<point>
+		<time>6500</time>
+		<xyz>0.329762 -0.491621 0.000000</xyz>
+	</point>
+	<point>
+		<time>6600</time>
+		<xyz>0.346428 -0.466621 0.000000</xyz>
+	</point>
+	<point>
+		<time>6700</time>
+		<xyz>0.346428 -0.441621 0.000000</xyz>
+	</point>
+	<point>
+		<time>6800</time>
+		<xyz>0.363095 -0.408287 0.000000</xyz>
+	</point>
+	<point>
+		<time>6900</time>
+		<xyz>0.363095 -0.383287 0.000000</xyz>
+	</point>
+	<point>
+		<time>7000</time>
+		<xyz>0.363095 -0.358287 0.000000</xyz>
+	</point>
+	<point>
+		<time>7100</time>
+		<xyz>0.371428 -0.324954 0.000000</xyz>
+	</point>
+	<point>
+		<time>7200</time>
+		<xyz>0.371428 -0.283287 0.000000</xyz>
+	</point>
+	<point>
+		<time>7300</time>
+		<xyz>0.379762 -0.241621 0.000000</xyz>
+	</point>
+	<point>
+		<time>7400</time>
+		<xyz>0.379762 -0.199954 0.000000</xyz>
+	</point>
+	<point>
+		<time>7500</time>
+		<xyz>0.379762 -0.183287 0.000000</xyz>
+	</point>
+	<point>
+		<time>7600</time>
+		<xyz>0.379762 -0.149954 0.000000</xyz>
+	</point>
+	<point>
+		<time>7700</time>
+		<xyz>0.379762 -0.116621 0.000000</xyz>
+	</point>
+	<point>
+		<time>7800</time>
+		<xyz>0.371428 -0.074954 0.000000</xyz>
+	</point>
+	<point>
+		<time>7900</time>
+		<xyz>0.363095 -0.033287 0.000000</xyz>
+	</point>
+	<point>
+		<time>8000</time>
+		<xyz>0.363095 0.008379 0.000000</xyz>
+	</point>
+	<point>
+		<time>8100</time>
+		<xyz>0.354762 0.050046 0.000000</xyz>
+	</point>
+	<point>
+		<time>8200</time>
+		<xyz>0.338095 0.083379 0.000000</xyz>
+	</point>
+	<point>
+		<time>8300</time>
+		<xyz>0.329762 0.116713 0.000000</xyz>
+	</point>
+	<point>
+		<time>8400</time>
+		<xyz>0.321428 0.141713 0.000000</xyz>
+	</point>
+	<point>
+		<time>8500</time>
+		<xyz>0.313095 0.158379 0.000000</xyz>
+	</point>
+	<point>
+		<time>8600</time>
+		<xyz>0.296428 0.183379 0.000000</xyz>
+	</point>
+	<point>
+		<time>8700</time>
+		<xyz>0.263095 0.216713 0.000000</xyz>
+	</point>
+	<point>
+		<time>8800</time>
+		<xyz>0.246428 0.241713 0.000000</xyz>
+	</point>
+	<point>
+		<time>8900</time>
+		<xyz>0.229762 0.266713 0.000000</xyz>
+	</point>
+	<point>
+		<time>9000</time>
+		<xyz>0.113095 0.308379 0.000000</xyz>
+	</point>
+	<point>
+		<time>9100</time>
+		<xyz>-0.045238 0.341713 0.000000</xyz>
+	</point>
+	<point>
+		<time>9400</time>
+		<xyz>-0.278572 0.350046 0.000000</xyz>
+	</point>
+	<point>
+		<time>9500</time>
+		<xyz>-0.395238 0.350046 0.000000</xyz>
+	</point>
+	<point>
+		<time>9600</time>
+		<xyz>-0.420238 0.350046 0.000000</xyz>
+	</point>
+	<point>
+		<time>9700</time>
+		<xyz>-0.436905 0.341713 0.000000</xyz>
+	</point>
+	<point>
+		<time>9800</time>
+		<xyz>-0.453572 0.308379 0.000000</xyz>
+	</point>
+	<point>
+		<time>9900</time>
+		<xyz>-0.470238 0.283379 0.000000</xyz>
+	</point>
+	<point>
+		<time>10000</time>
+		<xyz>-0.495238 0.250046 0.000000</xyz>
+	</point>
+	<point>
+		<time>10100</time>
+		<xyz>-0.503572 0.225046 0.000000</xyz>
+	</point>
+	<point>
+		<time>10200</time>
+		<xyz>-0.520238 0.200046 0.000000</xyz>
+	</point>
+	<point>
+		<time>10300</time>
+		<xyz>-0.528572 0.166713 0.000000</xyz>
+	</point>
+	<point>
+		<time>10400</time>
+		<xyz>-0.536905 0.133379 0.000000</xyz>
+	</point>
+	<point>
+		<time>10500</time>
+		<xyz>-0.545238 0.091713 0.000000</xyz>
+	</point>
+	<point>
+		<time>10600</time>
+		<xyz>-0.545238 0.058379 0.000000</xyz>
+	</point>
+	<point>
+		<time>10700</time>
+		<xyz>-0.545238 0.041713 0.000000</xyz>
+	</point>
+	<point>
+		<time>10800</time>
+		<xyz>-0.545238 0.000046 0.000000</xyz>
+	</point>
+	<point>
+		<time>10900</time>
+		<xyz>-0.545238 -0.033287 0.000000</xyz>
+	</point>
+	<point>
+		<time>11000</time>
+		<xyz>-0.545238 -0.058287 0.000000</xyz>
+	</point>
+	<point>
+		<time>11100</time>
+		<xyz>-0.545238 -0.091621 0.000000</xyz>
+	</point>
+	<point>
+		<time>11200</time>
+		<xyz>-0.545238 -0.116621 0.000000</xyz>
+	</point>
+	<point>
+		<time>11300</time>
+		<xyz>-0.536905 -0.133287 0.000000</xyz>
+	</point>
+	<point>
+		<time>11400</time>
+		<xyz>-0.528572 -0.149954 0.000000</xyz>
+	</point>
+	<point>
+		<time>11500</time>
+		<xyz>-0.520238 -0.174954 0.000000</xyz>
+	</point>
+	<point>
+		<time>11600</time>
+		<xyz>-0.486905 -0.199954 0.000000</xyz>
+	</point>
+	<point>
+		<time>11700</time>
+		<xyz>-0.453572 -0.224954 0.000000</xyz>
+	</point>
+	<point>
+		<time>11800</time>
+		<xyz>-0.395238 -0.249954 0.000000</xyz>
+	</point>
+	<point>
+		<time>11900</time>
+		<xyz>-0.378572 -0.249954 0.000000</xyz>
+	</point>
+	<point>
+		<time>12000</time>
+		<xyz>-0.320238 -0.258287 0.000000</xyz>
+	</point>
+	<point>
+		<time>12100</time>
+		<xyz>-0.286905 -0.283287 0.000000</xyz>
+	</point>
+	<point>
+		<time>12200</time>
+		<xyz>-0.186905 -0.291621 0.000000</xyz>
+	</point>
+	<point>
+		<time>12300</time>
+		<xyz>-0.061905 -0.299954 0.000000</xyz>
+	</point>
+	<point>
+		<time>12400</time>
+		<xyz>0.021428 -0.299954 0.000000</xyz>
+	</point>
+	<point>
+		<time>12500</time>
+		<xyz>0.071428 -0.299954 0.000000</xyz>
+	</point>
+	<point>
+		<time>12600</time>
+		<xyz>0.104762 -0.299954 0.000000</xyz>
+	</point>
+	<point>
+		<time>12700</time>
+		<xyz>0.154762 -0.291621 0.000000</xyz>
+	</point>
+	<point>
+		<time>12800</time>
+		<xyz>0.179762 -0.291621 0.000000</xyz>
+	</point>
+	<point>
+		<time>12900</time>
+		<xyz>0.254762 -0.274954 0.000000</xyz>
+	</point>
+	<point>
+		<time>13000</time>
+		<xyz>0.346428 -0.274954 0.000000</xyz>
+	</point>
+	<point>
+		<time>13100</time>
+		<xyz>0.404762 -0.274954 0.000000</xyz>
+	</point>
+	<point>
+		<time>13200</time>
+		<xyz>0.488095 -0.249954 0.000000</xyz>
+	</point>
+	<point>
+		<time>13300</time>
+		<xyz>0.554762 -0.233287 0.000000</xyz>
+	</point>
+	<point>
+		<time>13400</time>
+		<xyz>0.604762 -0.208287 0.000000</xyz>
+	</point>
+	<point>
+		<time>13500</time>
+		<xyz>0.629762 -0.191621 0.000000</xyz>
+	</point>
+	<point>
+		<time>13600</time>
+		<xyz>0.646428 -0.166621 0.000000</xyz>
+	</point>
+	<point>
+		<time>13700</time>
+		<xyz>0.663095 -0.116621 0.000000</xyz>
+	</point>
+	<point>
+		<time>13800</time>
+		<xyz>0.688095 -0.074954 0.000000</xyz>
+	</point>
+	<point>
+		<time>13900</time>
+		<xyz>0.713095 -0.008287 0.000000</xyz>
+	</point>
+	<point>
+		<time>14000</time>
+		<xyz>0.713095 0.033379 0.000000</xyz>
+	</point>
+	<point>
+		<time>14100</time>
+		<xyz>0.721428 0.075046 0.000000</xyz>
+	</point>
+	<point>
+		<time>14200</time>
+		<xyz>0.713095 0.108379 0.000000</xyz>
+	</point>
+	<point>
+		<time>14300</time>
+		<xyz>0.663095 0.141713 0.000000</xyz>
+	</point>
+	<point>
+		<time>14400</time>
+		<xyz>0.638095 0.158379 0.000000</xyz>
+	</point>
+	<point>
+		<time>14500</time>
+		<xyz>0.479762 0.200046 0.000000</xyz>
+	</point>
+	<point>
+		<time>14600</time>
+		<xyz>0.313095 0.225046 0.000000</xyz>
+	</point>
+	<point>
+		<time>14700</time>
+		<xyz>0.246428 0.233379 0.000000</xyz>
+	</point>
+	<point>
+		<time>14800</time>
+		<xyz>0.171428 0.250046 0.000000</xyz>
+	</point>
+	<point>
+		<time>14900</time>
+		<xyz>0.104762 0.250046 0.000000</xyz>
+	</point>
+	<point>
+		<time>15000</time>
+		<xyz>-0.336905 0.216713 0.000000</xyz>
+	</point>
+	<point>
+		<time>15100</time>
+		<xyz>-0.511905 0.191713 0.000000</xyz>
+	</point>
+	<point>
+		<time>15200</time>
+		<xyz>-0.578572 0.150046 0.000000</xyz>
+	</point>
+	<point>
+		<time>15300</time>
+		<xyz>-0.603572 0.150046 0.000000</xyz>
+	</point>
+	<point>
+		<time>15400</time>
+		<xyz>-0.628572 0.125046 0.000000</xyz>
+	</point>
+	<point>
+		<time>15500</time>
+		<xyz>-0.653572 0.116713 0.000000</xyz>
+	</point>
+	<point>
+		<time>15600</time>
+		<xyz>-0.678572 0.108379 0.000000</xyz>
+	</point>
+	<point>
+		<time>15700</time>
+		<xyz>-0.695238 0.100046 0.000000</xyz>
+	</point>
+	<point>
+		<time>15800</time>
+		<xyz>-0.728572 0.083379 0.000000</xyz>
+	</point>
+	<point>
+		<time>15900</time>
+		<xyz>-0.745238 0.075046 0.000000</xyz>
+	</point>
+	<point>
+		<time>16000</time>
+		<xyz>-0.753572 0.058379 0.000000</xyz>
+	</point>
+	<point>
+		<time>16100</time>
+		<xyz>-0.761905 0.041713 0.000000</xyz>
+	</point>
+	<point>
+		<time>16200</time>
+		<xyz>-0.761905 0.025046 0.000000</xyz>
+	</point>
+	<point>
+		<time>16300</time>
+		<xyz>-0.761905 0.008379 0.000000</xyz>
+	</point>
+	<point>
+		<time>16400</time>
+		<xyz>-0.761905 0.000046 0.000000</xyz>
+	</point>
+	<point>
+		<time>16500</time>
+		<xyz>-0.728572 -0.024954 0.000000</xyz>
+	</point>
+	<point>
+		<time>16600</time>
+		<xyz>-0.711905 -0.033287 0.000000</xyz>
+	</point>
+	<point>
+		<time>16700</time>
+		<xyz>-0.686905 -0.049954 0.000000</xyz>
+	</point>
+	<point>
+		<time>16800</time>
+		<xyz>-0.653572 -0.049954 0.000000</xyz>
+	</point>
+	<point>
+		<time>16900</time>
+		<xyz>-0.628572 -0.049954 0.000000</xyz>
+	</point>
+	<point>
+		<time>17000</time>
+		<xyz>-0.595238 -0.049954 0.000000</xyz>
+	</point>
+	<point>
+		<time>17100</time>
+		<xyz>-0.570238 -0.049954 0.000000</xyz>
+	</point>
+	<point>
+		<time>17200</time>
+		<xyz>-0.528572 -0.049954 0.000000</xyz>
+	</point>
+	<point>
+		<time>17300</time>
+		<xyz>-0.495238 -0.049954 0.000000</xyz>
+	</point>
+	<point>
+		<time>17400</time>
+		<xyz>-0.436905 -0.074954 0.000000</xyz>
+	</point>
+	<point>
+		<time>17500</time>
+		<xyz>-0.353572 -0.074954 0.000000</xyz>
+	</point>
+	<point>
+		<time>17600</time>
+		<xyz>-0.295238 -0.074954 0.000000</xyz>
+	</point>
+	<point>
+		<time>17700</time>
+		<xyz>-0.261905 -0.074954 0.000000</xyz>
+	</point>
+	<point>
+		<time>17800</time>
+		<xyz>-0.203572 -0.074954 0.000000</xyz>
+	</point>
+	<point>
+		<time>17900</time>
+		<xyz>-0.170238 -0.083287 0.000000</xyz>
+	</point>
+	<point>
+		<time>18000</time>
+		<xyz>-0.145238 -0.083287 0.000000</xyz>
+	</point>
+	<point>
+		<time>18100</time>
+		<xyz>-0.120238 -0.083287 0.000000</xyz>
+	</point>
+	<point>
+		<time>18200</time>
+		<xyz>-0.020238 -0.083287 0.000000</xyz>
+	</point>
+	<point>
+		<time>18300</time>
+		<xyz>0.088095 -0.083287 0.000000</xyz>
+	</point>
+	<point>
+		<time>18400</time>
+		<xyz>0.138095 -0.083287 0.000000</xyz>
+	</point>
+	<point>
+		<time>18500</time>
+		<xyz>0.171428 -0.066621 0.000000</xyz>
+	</point>
+	<point>
+		<time>18600</time>
+		<xyz>0.204762 -0.066621 0.000000</xyz>
+	</point>
+	<point>
+		<time>18700</time>
+		<xyz>0.229762 -0.058287 0.000000</xyz>
+	</point>
+	<point>
+		<time>18800</time>
+		<xyz>0.263095 -0.041621 0.000000</xyz>
+	</point>
+	<point>
+		<time>18900</time>
+		<xyz>0.288095 -0.016621 0.000000</xyz>
+	</point>
+	<point>
+		<time>19000</time>
+		<xyz>0.321428 0.016713 0.000000</xyz>
+	</point>
+	<point>
+		<time>19100</time>
+		<xyz>0.363095 0.083379 0.000000</xyz>
+	</point>
+	<point>
+		<time>19200</time>
+		<xyz>0.388095 0.125046 0.000000</xyz>
+	</point>
+	<point>
+		<time>19300</time>
+		<xyz>0.404762 0.191713 0.000000</xyz>
+	</point>
+	<point>
+		<time>19400</time>
+		<xyz>0.404762 0.258379 0.000000</xyz>
+	</point>
+	<point>
+		<time>19500</time>
+		<xyz>0.404762 0.316713 0.000000</xyz>
+	</point>
+	<point>
+		<time>19600</time>
+		<xyz>0.404762 0.383379 0.000000</xyz>
+	</point>
+	<point>
+		<time>19700</time>
+		<xyz>0.396428 0.416713 0.000000</xyz>
+	</point>
+	<point>
+		<time>19800</time>
+		<xyz>0.388095 0.458379 0.000000</xyz>
+	</point>
+	<point>
+		<time>19900</time>
+		<xyz>0.388095 0.491713 0.000000</xyz>
+	</point>
+	<point>
+		<time>20000</time>
+		<xyz>0.379762 0.541713 0.000000</xyz>
+	</point>
+	<point>
+		<time>20100</time>
+		<xyz>0.379762 0.566713 0.000000</xyz>
+	</point>
+	<point>
+		<time>20200</time>
+		<xyz>0.379762 0.575046 0.000000</xyz>
+	</point>
+	<point>
+		<time>20300</time>
+		<xyz>0.379762 0.583379 0.000000</xyz>
+	</point>
+	<point>
+		<time>20400</time>
+		<xyz>0.371428 0.608379 0.000000</xyz>
+	</point>
+	<point>
+		<time>20600</time>
+		<xyz>0.363095 0.641713 0.000000</xyz>
+	</point>
+	<point>
+		<time>20700</time>
+		<xyz>0.354762 0.658379 0.000000</xyz>
+	</point>
+	<point>
+		<time>20800</time>
+		<xyz>0.346428 0.683379 0.000000</xyz>
+	</point>
+	<point>
+		<time>20900</time>
+		<xyz>0.329762 0.691713 0.000000</xyz>
+	</point>
+	<point>
+		<time>21000</time>
+		<xyz>0.321428 0.708379 0.000000</xyz>
+	</point>
+	<point>
+		<time>21300</time>
+		<xyz>0.321428 0.716713 0.000000</xyz>
+	</point>
+</trajectory>
+<trajectory index="figure4">
+	<point>
+		<time>0</time>
+		<xyz>-0.478572 -0.183287 0.000000</xyz>
+	</point>
+	<point>
+		<time>100</time>
+		<xyz>-0.428572 -0.133287 0.000000</xyz>
+	</point>
+	<point>
+		<time>200</time>
+		<xyz>-0.403572 -0.133287 0.000000</xyz>
+	</point>
+	<point>
+		<time>300</time>
+		<xyz>-0.370238 -0.124954 0.000000</xyz>
+	</point>
+	<point>
+		<time>400</time>
+		<xyz>-0.320238 -0.116621 0.000000</xyz>
+	</point>
+	<point>
+		<time>500</time>
+		<xyz>-0.295238 -0.116621 0.000000</xyz>
+	</point>
+	<point>
+		<time>600</time>
+		<xyz>-0.253572 -0.116621 0.000000</xyz>
+	</point>
+	<point>
+		<time>700</time>
+		<xyz>-0.236905 -0.116621 0.000000</xyz>
+	</point>
+	<point>
+		<time>800</time>
+		<xyz>-0.203572 -0.116621 0.000000</xyz>
+	</point>
+	<point>
+		<time>900</time>
+		<xyz>-0.195238 -0.116621 0.000000</xyz>
+	</point>
+	<point>
+		<time>1000</time>
+		<xyz>-0.186905 -0.116621 0.000000</xyz>
+	</point>
+	<point>
+		<time>1100</time>
+		<xyz>-0.153572 -0.133287 0.000000</xyz>
+	</point>
+	<point>
+		<time>1200</time>
+		<xyz>-0.145238 -0.141621 0.000000</xyz>
+	</point>
+	<point>
+		<time>1300</time>
+		<xyz>-0.128572 -0.149954 0.000000</xyz>
+	</point>
+	<point>
+		<time>1400</time>
+		<xyz>-0.111905 -0.158287 0.000000</xyz>
+	</point>
+	<point>
+		<time>1500</time>
+		<xyz>-0.103572 -0.166621 0.000000</xyz>
+	</point>
+	<point>
+		<time>1600</time>
+		<xyz>-0.086905 -0.183287 0.000000</xyz>
+	</point>
+	<point>
+		<time>1700</time>
+		<xyz>-0.053572 -0.199954 0.000000</xyz>
+	</point>
+	<point>
+		<time>1800</time>
+		<xyz>-0.028572 -0.224954 0.000000</xyz>
+	</point>
+	<point>
+		<time>1900</time>
+		<xyz>-0.003572 -0.241621 0.000000</xyz>
+	</point>
+	<point>
+		<time>2000</time>
+		<xyz>0.013095 -0.258287 0.000000</xyz>
+	</point>
+	<point>
+		<time>2100</time>
+		<xyz>0.046428 -0.266621 0.000000</xyz>
+	</point>
+	<point>
+		<time>2200</time>
+		<xyz>0.063095 -0.274954 0.000000</xyz>
+	</point>
+	<point>
+		<time>2300</time>
+		<xyz>0.088095 -0.274954 0.000000</xyz>
+	</point>
+	<point>
+		<time>2400</time>
+		<xyz>0.113095 -0.274954 0.000000</xyz>
+	</point>
+	<point>
+		<time>2500</time>
+		<xyz>0.121428 -0.274954 0.000000</xyz>
+	</point>
+	<point>
+		<time>2600</time>
+		<xyz>0.146428 -0.274954 0.000000</xyz>
+	</point>
+	<point>
+		<time>2700</time>
+		<xyz>0.163095 -0.274954 0.000000</xyz>
+	</point>
+	<point>
+		<time>2900</time>
+		<xyz>0.188095 -0.274954 0.000000</xyz>
+	</point>
+	<point>
+		<time>3100</time>
+		<xyz>0.196428 -0.266621 0.000000</xyz>
+	</point>
+	<point>
+		<time>3200</time>
+		<xyz>0.221428 -0.258287 0.000000</xyz>
+	</point>
+	<point>
+		<time>3300</time>
+		<xyz>0.229762 -0.249954 0.000000</xyz>
+	</point>
+	<point>
+		<time>3400</time>
+		<xyz>0.238095 -0.241621 0.000000</xyz>
+	</point>
+	<point>
+		<time>3500</time>
+		<xyz>0.254762 -0.233287 0.000000</xyz>
+	</point>
+	<point>
+		<time>3600</time>
+		<xyz>0.263095 -0.224954 0.000000</xyz>
+	</point>
+	<point>
+		<time>3700</time>
+		<xyz>0.263095 -0.216621 0.000000</xyz>
+	</point>
+	<point>
+		<time>3800</time>
+		<xyz>0.271428 -0.199954 0.000000</xyz>
+	</point>
+	<point>
+		<time>3900</time>
+		<xyz>0.279762 -0.191621 0.000000</xyz>
+	</point>
+	<point>
+		<time>4000</time>
+		<xyz>0.288095 -0.183287 0.000000</xyz>
+	</point>
+	<point>
+		<time>4100</time>
+		<xyz>0.296428 -0.166621 0.000000</xyz>
+	</point>
+	<point>
+		<time>4200</time>
+		<xyz>0.296428 -0.158287 0.000000</xyz>
+	</point>
+	<point>
+		<time>4400</time>
+		<xyz>0.313095 -0.149954 0.000000</xyz>
+	</point>
+	<point>
+		<time>4600</time>
+		<xyz>0.321428 -0.141621 0.000000</xyz>
+	</point>
+	<point>
+		<time>4800</time>
+		<xyz>0.321428 -0.133287 0.000000</xyz>
+	</point>
+	<point>
+		<time>4900</time>
+		<xyz>0.329762 -0.133287 0.000000</xyz>
+	</point>
+	<point>
+		<time>5000</time>
+		<xyz>0.338095 -0.124954 0.000000</xyz>
+	</point>
+	<point>
+		<time>5100</time>
+		<xyz>0.346428 -0.116621 0.000000</xyz>
+	</point>
+	<point>
+		<time>5200</time>
+		<xyz>0.354762 -0.116621 0.000000</xyz>
+	</point>
+	<point>
+		<time>5300</time>
+		<xyz>0.363095 -0.108287 0.000000</xyz>
+	</point>
+	<point>
+		<time>5500</time>
+		<xyz>0.371428 -0.108287 0.000000</xyz>
+	</point>
+	<point>
+		<time>5700</time>
+		<xyz>0.388095 -0.108287 0.000000</xyz>
+	</point>
+	<point>
+		<time>5900</time>
+		<xyz>0.388095 -0.116621 0.000000</xyz>
+	</point>
+	<point>
+		<time>6000</time>
+		<xyz>0.388095 -0.133287 0.000000</xyz>
+	</point>
+	<point>
+		<time>6100</time>
+		<xyz>0.388095 -0.149954 0.000000</xyz>
+	</point>
+	<point>
+		<time>6200</time>
+		<xyz>0.379762 -0.174954 0.000000</xyz>
+	</point>
+	<point>
+		<time>6300</time>
+		<xyz>0.371428 -0.191621 0.000000</xyz>
+	</point>
+	<point>
+		<time>6400</time>
+		<xyz>0.346428 -0.224954 0.000000</xyz>
+	</point>
+	<point>
+		<time>6500</time>
+		<xyz>0.329762 -0.241621 0.000000</xyz>
+	</point>
+	<point>
+		<time>6600</time>
+		<xyz>0.321428 -0.249954 0.000000</xyz>
+	</point>
+	<point>
+		<time>6700</time>
+		<xyz>0.313095 -0.258287 0.000000</xyz>
+	</point>
+	<point>
+		<time>6800</time>
+		<xyz>0.279762 -0.274954 0.000000</xyz>
+	</point>
+	<point>
+		<time>6900</time>
+		<xyz>0.254762 -0.283287 0.000000</xyz>
+	</point>
+	<point>
+		<time>7000</time>
+		<xyz>0.229762 -0.291621 0.000000</xyz>
+	</point>
+	<point>
+		<time>7100</time>
+		<xyz>0.196428 -0.299954 0.000000</xyz>
+	</point>
+	<point>
+		<time>7200</time>
+		<xyz>0.163095 -0.308287 0.000000</xyz>
+	</point>
+	<point>
+		<time>7300</time>
+		<xyz>0.138095 -0.308287 0.000000</xyz>
+	</point>
+	<point>
+		<time>7400</time>
+		<xyz>0.113095 -0.316621 0.000000</xyz>
+	</point>
+	<point>
+		<time>7500</time>
+		<xyz>0.088095 -0.316621 0.000000</xyz>
+	</point>
+	<point>
+		<time>7600</time>
+		<xyz>0.063095 -0.316621 0.000000</xyz>
+	</point>
+	<point>
+		<time>7700</time>
+		<xyz>0.029762 -0.316621 0.000000</xyz>
+	</point>
+	<point>
+		<time>7800</time>
+		<xyz>-0.003572 -0.316621 0.000000</xyz>
+	</point>
+	<point>
+		<time>7900</time>
+		<xyz>-0.020238 -0.316621 0.000000</xyz>
+	</point>
+	<point>
+		<time>8000</time>
+		<xyz>-0.045238 -0.308287 0.000000</xyz>
+	</point>
+	<point>
+		<time>8100</time>
+		<xyz>-0.053572 -0.299954 0.000000</xyz>
+	</point>
+	<point>
+		<time>8200</time>
+		<xyz>-0.061905 -0.291621 0.000000</xyz>
+	</point>
+	<point>
+		<time>8300</time>
+		<xyz>-0.095238 -0.249954 0.000000</xyz>
+	</point>
+	<point>
+		<time>8400</time>
+		<xyz>-0.103572 -0.233287 0.000000</xyz>
+	</point>
+	<point>
+		<time>8500</time>
+		<xyz>-0.111905 -0.216621 0.000000</xyz>
+	</point>
+	<point>
+		<time>8600</time>
+		<xyz>-0.128572 -0.199954 0.000000</xyz>
+	</point>
+	<point>
+		<time>8700</time>
+		<xyz>-0.153572 -0.183287 0.000000</xyz>
+	</point>
+	<point>
+		<time>8800</time>
+		<xyz>-0.178572 -0.158287 0.000000</xyz>
+	</point>
+	<point>
+		<time>8900</time>
+		<xyz>-0.195238 -0.149954 0.000000</xyz>
+	</point>
+	<point>
+		<time>9000</time>
+		<xyz>-0.203572 -0.141621 0.000000</xyz>
+	</point>
+	<point>
+		<time>9100</time>
+		<xyz>-0.228572 -0.141621 0.000000</xyz>
+	</point>
+	<point>
+		<time>9200</time>
+		<xyz>-0.253572 -0.141621 0.000000</xyz>
+	</point>
+	<point>
+		<time>9300</time>
+		<xyz>-0.286905 -0.141621 0.000000</xyz>
+	</point>
+	<point>
+		<time>9400</time>
+		<xyz>-0.303572 -0.141621 0.000000</xyz>
+	</point>
+	<point>
+		<time>9500</time>
+		<xyz>-0.328572 -0.149954 0.000000</xyz>
+	</point>
+	<point>
+		<time>9600</time>
+		<xyz>-0.353572 -0.158287 0.000000</xyz>
+	</point>
+	<point>
+		<time>9700</time>
+		<xyz>-0.361905 -0.183287 0.000000</xyz>
+	</point>
+	<point>
+		<time>9800</time>
+		<xyz>-0.386905 -0.191621 0.000000</xyz>
+	</point>
+	<point>
+		<time>9900</time>
+		<xyz>-0.403572 -0.199954 0.000000</xyz>
+	</point>
+	<point>
+		<time>10000</time>
+		<xyz>-0.420238 -0.216621 0.000000</xyz>
+	</point>
+	<point>
+		<time>10100</time>
+		<xyz>-0.436905 -0.216621 0.000000</xyz>
+	</point>
+	<point>
+		<time>10200</time>
+		<xyz>-0.453572 -0.224954 0.000000</xyz>
+	</point>
+	<point>
+		<time>10300</time>
+		<xyz>-0.461905 -0.224954 0.000000</xyz>
+	</point>
+	<point>
+		<time>10400</time>
+		<xyz>-0.470238 -0.216621 0.000000</xyz>
+	</point>
+	<point>
+		<time>10500</time>
+		<xyz>-0.478572 -0.208287 0.000000</xyz>
+	</point>
+	<point>
+		<time>10600</time>
+		<xyz>-0.486905 -0.199954 0.000000</xyz>
+	</point>
+	<point>
+		<time>10700</time>
+		<xyz>-0.486905 -0.191621 0.000000</xyz>
+	</point>
+	<point>
+		<time>10800</time>
+		<xyz>-0.486905 -0.183287 0.000000</xyz>
+	</point>
+</trajectory>
+<trajectory index="figure5">
+	<point>
+		<time>0</time>
+		<xyz>0.170410 -0.060838 0.000000</xyz>
+	</point>
+	<point>
+		<time>100</time>
+		<xyz>0.113995 -0.084909 0.000000</xyz>
+	</point>
+	<point>
+		<time>200</time>
+		<xyz>0.039054 -0.080307 0.000000</xyz>
+	</point>
+	<point>
+		<time>300</time>
+		<xyz>-0.002568 -0.057195 0.000000</xyz>
+	</point>
+	<point>
+		<time>400</time>
+		<xyz>-0.087701 -0.025765 0.000000</xyz>
+	</point>
+	<point>
+		<time>500</time>
+		<xyz>-0.144146 0.013070 0.000000</xyz>
+	</point>
+	<point>
+		<time>600</time>
+		<xyz>-0.269087 0.033394 0.000000</xyz>
+	</point>
+	<point>
+		<time>700</time>
+		<xyz>-0.349603 0.006521 0.000000</xyz>
+	</point>
+	<point>
+		<time>800</time>
+		<xyz>-0.361638 -0.037933 0.000000</xyz>
+	</point>
+	<point>
+		<time>900</time>
+		<xyz>-0.357936 -0.093494 0.000000</xyz>
+	</point>
+	<point>
+		<time>1000</time>
+		<xyz>-0.354264 -0.156459 0.000000</xyz>
+	</point>
+	<point>
+		<time>1100</time>
+		<xyz>-0.341329 -0.246267 0.000000</xyz>
+	</point>
+	<point>
+		<time>1200</time>
+		<xyz>-0.325606 -0.380500 0.000000</xyz>
+	</point>
+	<point>
+		<time>1300</time>
+		<xyz>-0.296919 -0.530470 0.000000</xyz>
+	</point>
+	<point>
+		<time>1400</time>
+		<xyz>-0.261757 -0.645278 0.000000</xyz>
+	</point>
+	<point>
+		<time>1500</time>
+		<xyz>-0.220120 -0.758273 0.000000</xyz>
+	</point>
+	<point>
+		<time>1600</time>
+		<xyz>-0.142391 -0.867550 0.000000</xyz>
+	</point>
+	<point>
+		<time>1700</time>
+		<xyz>-0.035946 -0.946252 0.000000</xyz>
+	</point>
+	<point>
+		<time>1800</time>
+		<xyz>0.037195 -0.976798 0.000000</xyz>
+	</point>
+	<point>
+		<time>1900</time>
+		<xyz>0.128847 -0.965691 0.000000</xyz>
+	</point>
+	<point>
+		<time>2000</time>
+		<xyz>0.204762 -0.916621 0.000000</xyz>
+	</point>
+	<point>
+		<time>2100</time>
+		<xyz>0.254762 -0.849954 0.000000</xyz>
+	</point>
+	<point>
+		<time>2200</time>
+		<xyz>0.288095 -0.783287 0.000000</xyz>
+	</point>
+	<point>
+		<time>2300</time>
+		<xyz>0.329762 -0.649954 0.000000</xyz>
+	</point>
+	<point>
+		<time>2400</time>
+		<xyz>0.354762 -0.541621 0.000000</xyz>
+	</point>
+	<point>
+		<time>2500</time>
+		<xyz>0.363095 -0.416621 0.000000</xyz>
+	</point>
+	<point>
+		<time>2600</time>
+		<xyz>0.379762 -0.324954 0.000000</xyz>
+	</point>
+	<point>
+		<time>2700</time>
+		<xyz>0.379762 -0.274954 0.000000</xyz>
+	</point>
+	<point>
+		<time>2900</time>
+		<xyz>0.398299 -0.143321 0.000000</xyz>
+	</point>
+	<point>
+		<time>3100</time>
+		<xyz>0.388945 -0.006757 0.000000</xyz>
+	</point>
+	<point>
+		<time>3200</time>
+		<xyz>0.371939 0.190522 0.000000</xyz>
+	</point>
+	<point>
+		<time>3300</time>
+		<xyz>0.347619 0.292903 0.000000</xyz>
+	</point>
+	<point>
+		<time>3400</time>
+		<xyz>0.320174 0.413845 0.000000</xyz>
+	</point>
+	<point>
+		<time>3500</time>
+		<xyz>0.288722 0.465906 0.000000</xyz>
+	</point>
+	<point>
+		<time>3600</time>
+		<xyz>0.184959 0.548612 0.000000</xyz>
+	</point>
+	<point>
+		<time>3700</time>
+		<xyz>0.102970 0.574956 0.000000</xyz>
+	</point>
+	<point>
+		<time>3800</time>
+		<xyz>0.041410 0.577555 0.000000</xyz>
+	</point>
+	<point>
+		<time>3900</time>
+		<xyz>-0.039414 0.576301 0.000000</xyz>
+	</point>
+	<point>
+		<time>4000</time>
+		<xyz>-0.127228 0.541085 0.000000</xyz>
+	</point>
+	<point>
+		<time>4100</time>
+		<xyz>-0.209934 0.475136 0.000000</xyz>
+	</point>
+	<point>
+		<time>4200</time>
+		<xyz>-0.229826 0.420028 0.000000</xyz>
+	</point>
+	<point>
+		<time>4400</time>
+		<xyz>-0.243984 0.345655 0.000000</xyz>
+	</point>
+	<point>
+		<time>4600</time>
+		<xyz>-0.260651 0.220655 0.000000</xyz>
+	</point>
+	<point>
+		<time>4800</time>
+		<xyz>-0.240131 0.096283 0.000000</xyz>
+	</point>
+	<point>
+		<time>4900</time>
+		<xyz>-0.194611 -0.016531 0.000000</xyz>
+	</point>
+	<point>
+		<time>5000</time>
+		<xyz>-0.113787 -0.097983 0.000000</xyz>
+	</point>
+	<point>
+		<time>5100</time>
+		<xyz>-0.005453 -0.142875 0.000000</xyz>
+	</point>
+	<point>
+		<time>5200</time>
+		<xyz>0.115066 -0.156943 0.000000</xyz>
+	</point>
+	<point>
+		<time>5300</time>
+		<xyz>0.195174 -0.145384 0.000000</xyz>
+	</point>
+	<point>
+		<time>5500</time>
+		<xyz>0.261124 -0.090904 0.000000</xyz>
+	</point>
+	<point>
+		<time>5700</time>
+		<xyz>0.288633 0.003272 0.000000</xyz>
+	</point>
+	<point>
+		<time>5900</time>
+		<xyz>0.275819 0.085888 0.000000</xyz>
+	</point>
+	<point>
+		<time>6000</time>
+		<xyz>0.263005 0.166623 0.000000</xyz>
+	</point>
+	<point>
+		<time>6100</time>
+		<xyz>0.263005 0.199956 0.000000</xyz>
+	</point>
+	<point>
+		<time>6200</time>
+		<xyz>0.250192 0.251211 0.000000</xyz>
+	</point>
+	<point>
+		<time>6300</time>
+		<xyz>0.222683 0.302465 0.000000</xyz>
+	</point>
+	<point>
+		<time>6400</time>
+		<xyz>0.184869 0.359186 0.000000</xyz>
+	</point>
+	<point>
+		<time>6500</time>
+		<xyz>0.156375 0.373343 0.000000</xyz>
+	</point>
+	<point>
+		<time>6600</time>
+		<xyz>0.116321 0.382662 0.000000</xyz>
+	</point>
+	<point>
+		<time>6700</time>
+		<xyz>0.077880 0.388756 0.000000</xyz>
+	</point>
+	<point>
+		<time>6800</time>
+		<xyz>0.057187 0.387368 0.000000</xyz>
+	</point>
+	<point>
+		<time>6900</time>
+		<xyz>0.035188 0.384915 0.000000</xyz>
+	</point>
+	<point>
+		<time>7000</time>
+		<xyz>0.013148 0.380982 0.000000</xyz>
+	</point>
+	<point>
+		<time>7100</time>
+		<xyz>-0.008265 0.367409 0.000000</xyz>
+	</point>
+	<point>
+		<time>7200</time>
+		<xyz>-0.037878 0.350155 0.000000</xyz>
+	</point>
+	<point>
+		<time>7300</time>
+		<xyz>-0.062838 0.322593 0.000000</xyz>
+	</point>
+	<point>
+		<time>7400</time>
+		<xyz>-0.072917 0.300939 0.000000</xyz>
+	</point>
+	<point>
+		<time>7500</time>
+		<xyz>-0.086756 0.260016 0.000000</xyz>
+	</point>
+	<point>
+		<time>7600</time>
+		<xyz>-0.093155 0.196772 0.000000</xyz>
+	</point>
+	<point>
+		<time>7700</time>
+		<xyz>-0.093006 0.140969 0.000000</xyz>
+	</point>
+	<point>
+		<time>7800</time>
+		<xyz>-0.059375 0.051683 0.000000</xyz>
+	</point>
+	<point>
+		<time>7900</time>
+		<xyz>-0.046280 0.029361 0.000000</xyz>
+	</point>
+	<point>
+		<time>8000</time>
+		<xyz>-0.034078 0.011653 0.000000</xyz>
+	</point>
+	<point>
+		<time>8100</time>
+		<xyz>-0.087054 0.034867 0.000000</xyz>
+	</point>
+	<point>
+		<time>8200</time>
+		<xyz>-0.136310 0.125046 0.000000</xyz>
+	</point>
+	<point>
+		<time>8300</time>
+		<xyz>-0.151042 0.177873 0.000000</xyz>
+	</point>
+	<point>
+		<time>8400</time>
+		<xyz>-0.159375 0.250344 0.000000</xyz>
+	</point>
+	<point>
+		<time>8500</time>
+		<xyz>-0.149107 0.311653 0.000000</xyz>
+	</point>
+	<point>
+		<time>8600</time>
+		<xyz>-0.139732 0.343201 0.000000</xyz>
+	</point>
+	<point>
+		<time>8700</time>
+		<xyz>-0.112649 0.385909 0.000000</xyz>
+	</point>
+	<point>
+		<time>8800</time>
+		<xyz>-0.074405 0.418350 0.000000</xyz>
+	</point>
+	<point>
+		<time>8900</time>
+		<xyz>-0.046429 0.426683 0.000000</xyz>
+	</point>
+	<point>
+		<time>9000</time>
+		<xyz>-0.021280 0.438736 0.000000</xyz>
+	</point>
+	<point>
+		<time>9100</time>
+		<xyz>0.005803 0.442457 0.000000</xyz>
+	</point>
+	<point>
+		<time>9200</time>
+		<xyz>0.036607 0.442457 0.000000</xyz>
+	</point>
+	<point>
+		<time>9300</time>
+		<xyz>0.062797 0.431296 0.000000</xyz>
+	</point>
+	<point>
+		<time>9400</time>
+		<xyz>0.083333 0.420135 0.000000</xyz>
+	</point>
+	<point>
+		<time>9500</time>
+		<xyz>0.110416 0.393201 0.000000</xyz>
+	</point>
+	<point>
+		<time>9600</time>
+		<xyz>0.133780 0.369986 0.000000</xyz>
+	</point>
+	<point>
+		<time>9700</time>
+		<xyz>0.140327 0.348707 0.000000</xyz>
+	</point>
+	<point>
+		<time>9800</time>
+		<xyz>0.159617 0.314251 0.000000</xyz>
+	</point>
+	<point>
+		<time>9900</time>
+		<xyz>0.174567 0.278817 0.000000</xyz>
+	</point>
+	<point>
+		<time>10000</time>
+		<xyz>0.189518 0.248601 0.000000</xyz>
+	</point>
+	<point>
+		<time>10100</time>
+		<xyz>0.195435 0.194400 0.000000</xyz>
+	</point>
+	<point>
+		<time>10200</time>
+		<xyz>0.210385 0.154450 0.000000</xyz>
+	</point>
+	<point>
+		<time>10300</time>
+		<xyz>0.206568 0.118316 0.000000</xyz>
+	</point>
+	<point>
+		<time>10400</time>
+		<xyz>0.211785 0.095032 0.000000</xyz>
+	</point>
+	<point>
+		<time>10500</time>
+		<xyz>0.203452 0.049165 0.000000</xyz>
+	</point>
+	<point>
+		<time>10600</time>
+		<xyz>0.204152 0.016848 0.000000</xyz>
+	</point>
+	<point>
+		<time>10700</time>
+		<xyz>0.190602 -0.019986 0.000000</xyz>
+	</point>
+	<point>
+		<time>10800</time>
+		<xyz>0.163501 -0.065853 0.000000</xyz>
+	</point>
+</trajectory>
+</ambiscore>
+
