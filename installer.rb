@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby -wKU
+# encoding: utf-8
 
-###################################################################
+# encoding: utf-8###################################################################
 # make an installer for Jamoma
 # note: you must have already done a build
 # note: all zips should be unzipped (3rd-party externs) too
