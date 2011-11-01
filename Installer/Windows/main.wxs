@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2003/01/wi">
 
-  <Product Name="JamomaDependencies" Id="{BA3D3E15-B2A8-40FF-A04A-6D2A6B5EC967}" 
-	Language="1033" Codepage="1252" Version="0.5.0" 
-	Manufacturer="jamoma.org" UpgradeCode="{331F2681-7AE0-4BC3-A072-75F9777317C3}">
+  <Product Name="JamomaDependencies" Id="{20EA1EAF-57C4-4BB7-923E-0AD942AC79CC}" 
+	Language="1033" Codepage="1252" Version="0.5.4" 
+	Manufacturer="jamoma.org" UpgradeCode="{494876F1-5B58-456C-920D-307F098248D7}">
 
     <Package Id='????????-????-????-????-????????????' Keywords='Installer'
       Description="Jamoma Dependencies Installer"
@@ -37,7 +37,7 @@
     <UIRef Id="WixUI_FeatureTree" />
     <UIRef Id="WixUI_ErrorProgressText" />
 
-    <Icon Id="JamomaIcon" SourceFile="..\..\..\Modular\SourceCode\Framework\resources\jamoma.ico" />
+    <Icon Id="JamomaIcon" SourceFile="..\..\..\Modular\library\resources\jamoma.ico" />
     <Property Id="ARPPRODUCTICON">JamomaIcon</Property>
     <Property Id="ARPURLINFOABOUT">http://jamoma.org</Property>
 

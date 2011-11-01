@@ -9,7 +9,53 @@
 
 
 @name = "JamomaDependencies"
-@version = "0.5.0"       # TODO: automate this value from a git tag
+
+###################################################################
+# Get Revision Info -- BAD FORM, BUT THIS COPY/PASTED FROM build.rb
+###################################################################
+
+git_desc = `git describe --tags --abbrev=5 --long`.split('-')
+git_tag = git_desc[0]
+git_dirty_commits = git_desc[git_desc.size()-2]
+git_rev = git_desc[git_desc.size()-1]
+git_rev.sub!('g', '')
+git_rev.chop!
+
+version_digits = git_tag.split(/\./)
+version_maj = 0
+version_min = 0
+version_sub = 0
+version_mod = ''
+version_mod = version_digits[3] if version_digits.size() > 3
+version_sub = version_digits[2] if version_digits.size() > 2
+version_min = version_digits[1] if version_digits.size() > 1
+version_maj = version_digits[0] if version_digits.size() > 0
+
+	if false
+	puts ""
+	puts "  Building Jamoma #{git_tag} (rev. #{git_rev})"
+	puts ""
+	if git_dirty_commits != '0'
+		puts "  !!! WARNING !!!"
+		puts "	THIS BUILD IS COMING FROM A DIRTY REVISION   "
+		puts "	THIS BUILD IS FOR PERSONAL USE ONLY  "
+		puts "	DO NOT DISTRIBUTE THIS BUILD TO OTHERS       "
+		puts ""
+	end
+	puts ""
+	end
+	
+if version_mod == '' || version_mod.match(/rc(.*)/)
+  @version = "#{version_maj}.#{version_min}#{'.' + version_sub if version_sub.to_i > 0}"
+else
+  @version = "#{version_maj}.#{version_min}#{'.' + version_sub if version_sub.to_i > 0}-#{version_mod}"
+end
+
+if version_mod != ''
+  longVersion = "#{version_maj}.#{version_min}.#{version_sub}-#{version_mod}"
+else
+  longVersion = "#{version_maj}.#{version_min}.#{version_sub}"
+end
 
 
 ###################################################################
@@ -47,7 +93,7 @@ if win32?
   `rm -rfv #{@root}`
   `rm -f "#{@temp}"/*.wixobj`
   `rm -f "#{@temp}"/Jamoma*.wxs`
-  `rm -f "#{@temp}"/#{@name}.msi`
+  `rm -f "#{@temp}"/*.msi`
 
   # dir structure
   `mkdir -pv "#{@c74}"`
@@ -81,7 +127,7 @@ if win32?
   puts `../../support/wix/candle.exe -dvar.ProductVersion="#{@version}" -dvar.ProductName="#{@name} #{@version}" /nologo ui.wxs` 
   
   puts "   Now making the installer" 
-  puts `../../support/wix/light.exe /nologo /out #{@name}.msi main.wixobj JamomaC74.wixobj ui.wixobj ../../support/wix/wixui.wixlib -loc ../../support/wix/WixUI_en-us.wxl`
+  puts `../../support/wix/light.exe /nologo /out "#{@name}-#{longVersion}".msi main.wixobj JamomaC74.wixobj ui.wixobj ../../support/wix/wixui.wixlib -loc ../../support/wix/WixUI_en-us.wxl`
 
   # distribution
   puts "  Assembling zip..."
