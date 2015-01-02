@@ -64,7 +64,7 @@ void vbap_assist(t_vbap *x, void *b, long m, long a, char *s)
 			case 4 : mess = "gain control"; break;
 		}
 	}
-	sprintf(s,mess);
+	strcpy(s,mess);
 }
 
 /* above are the prototypes for the methods/procedures/functions you will use */
