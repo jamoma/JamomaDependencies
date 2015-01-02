@@ -15,7 +15,6 @@ See copyright in file with name COPYRIGHT  */
 // Function prototypes
 void new_spread_dir(t_vbap *x, float spreaddir[3], float vscartdir[3], float spread_base[3]);
 void new_spread_base(t_vbap *x, float spreaddir[3], float vscartdir[3]);
-void *vbap_class;				
 void vect_cross_prod(float v1[3], float v2[3],float v3[3]);
 void additive_vbap(float *final_gs, float cartdir[3], t_vbap *x);
 void vbap_bang(t_vbap *x);
@@ -29,6 +28,8 @@ void *vbap_new(long azi,long ele);
 void vbap(float g[3], long ls[3], t_vbap *x);
 void angle_to_cart(long azi, long ele, float res[3]);
 void cart_to_angle(float cvec[3], float avec[3]);
+
+static t_class *vbap_class;		// required global pointer to this class
 
 /*****************************************************
 	 INCLUDE ALL define_loudspeakers functions directly into VBAP
