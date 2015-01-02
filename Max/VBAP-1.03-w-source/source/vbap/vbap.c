@@ -112,7 +112,9 @@ void vbap_in3(t_vbap *x, long n) { x->x_spread = (n<0) ? 0 : (n>100) ? 100 : n; 
 /*--------------------------------------------------------------------------*/
 void vbap_int(t_vbap *x, long n)
 {
-    switch (x->x_obj.z_in)
+    long in = proxy_getinlet((t_object *)x);
+    
+    switch (in)
     {// if right inlet
         case 0:
             vbap_in1(x,n);
@@ -133,7 +135,9 @@ void vbap_ft4(t_vbap *x, double g) { x->x_gain = g; }
 /*--------------------------------------------------------------------------*/
 void vbap_float(t_vbap *x, double f)
 {
-    if (x->x_obj.z_in == 3) // if inlet 4
+    long in = proxy_getinlet((t_object *)x);
+    
+    if (in == 3) // if inlet 4
     {
         vbap_ft4(x, f);
     } else {

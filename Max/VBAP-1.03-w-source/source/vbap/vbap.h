@@ -53,7 +53,7 @@ typedef struct t_ls_set
 #ifdef VBAP_OBJECT
 	typedef struct vbap				/* This defines the object as an entity made up of other things */
 	{
-		Object x_ob;				
+		t_object x_ob;
 		long x_azi; 	// panning direction azimuth
 		long x_ele;		// panning direction elevation			
 		void *x_outlet0;				/* outlet creation - inlets are automatic */
@@ -87,7 +87,7 @@ typedef struct t_ls_set
 	/* define_loudspeakers maxmsp object */
 	typedef struct 				
 	{
-		Object x_ob;				/* gotta say this... it creates a reference to your object */
+		t_object x_ob;				/* gotta say this... it creates a reference to your object */
 		long x_ls_read;	 			// 1 if loudspeaker directions have been read
 		long x_triplets_specified;  // 1 if loudspeaker triplets have been chosen
 		t_ls x_ls[MAX_LS_AMOUNT];   // loudspeakers
