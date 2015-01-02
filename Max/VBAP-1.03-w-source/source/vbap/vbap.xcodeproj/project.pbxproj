@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8E290A081A571A1400BBB7E9 /* vbap.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E290A071A571A1400BBB7E9 /* vbap.h */; };
-		8E290A0B1A571A1F00BBB7E9 /* define_loudspeakers.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E290A091A571A1F00BBB7E9 /* define_loudspeakers.c */; };
-		8E290A0C1A571A1F00BBB7E9 /* define_loudspeakers.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E290A0A1A571A1F00BBB7E9 /* define_loudspeakers.h */; };
 		8E9ACFD51A2C097A00FB51EF /* vbap.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E9ACFD41A2C097A00FB51EF /* vbap.c */; };
 /* End PBXBuildFile section */
 
@@ -17,8 +15,6 @@
 		2273EE491A03F14F0057B483 /* max.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = max.xcconfig; path = ../max.xcconfig; sourceTree = "<group>"; };
 		2FBBEAE508F335360078DB84 /* vbap.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vbap.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E290A071A571A1400BBB7E9 /* vbap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbap.h; sourceTree = "<group>"; };
-		8E290A091A571A1F00BBB7E9 /* define_loudspeakers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = define_loudspeakers.c; path = ../define_loudspeakers/define_loudspeakers.c; sourceTree = "<group>"; };
-		8E290A0A1A571A1F00BBB7E9 /* define_loudspeakers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = define_loudspeakers.h; path = ../define_loudspeakers/define_loudspeakers.h; sourceTree = "<group>"; };
 		8E9ACFD41A2C097A00FB51EF /* vbap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vbap.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,8 +35,6 @@
 				2273EE491A03F14F0057B483 /* max.xcconfig */,
 				8E9ACFD41A2C097A00FB51EF /* vbap.c */,
 				8E290A071A571A1400BBB7E9 /* vbap.h */,
-				8E290A091A571A1F00BBB7E9 /* define_loudspeakers.c */,
-				8E290A0A1A571A1F00BBB7E9 /* define_loudspeakers.h */,
 				19C28FB4FE9D528D11CA2CBB /* Products */,
 			);
 			name = iterator;
@@ -62,7 +56,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E290A081A571A1400BBB7E9 /* vbap.h in Headers */,
-				8E290A0C1A571A1F00BBB7E9 /* define_loudspeakers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +130,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E290A0B1A571A1F00BBB7E9 /* define_loudspeakers.c in Sources */,
 				8E9ACFD51A2C097A00FB51EF /* vbap.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
