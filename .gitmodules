@@ -1,0 +1,3 @@
+[submodule "Max/VBAP-1.03-w-source/max6-sdk"]
+	path = Max/VBAP-1.03-w-source/max6-sdk
+	url = https://github.com/Cycling74/max6-sdk.git
