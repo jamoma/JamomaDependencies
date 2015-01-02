@@ -22,9 +22,7 @@ void vbap_matrix(t_vbap *x, t_symbol *s, int ac, t_atom *av);
 void vbap_in1(t_vbap *x, long n);
 void vbap_in2(t_vbap *x, long n);
 void vbap_in3(t_vbap *x, long n);
-void vbap_int(t_vbap *x, long n);
 void vbap_ft4(t_vbap *x, double g);
-void vbap_float(t_vbap *x, double f);
 void spread_it(t_vbap *x, float *final_gs);
 void *vbap_new(long azi,long ele);
 void vbap(float g[3], long ls[3], t_vbap *x);
@@ -78,8 +76,10 @@ int C74_EXPORT main(void)
     c = class_new("vbap", (method)vbap_new, 0L, (short)sizeof(t_vbap), 0L, A_DEFLONG,A_DEFLONG, 0);
 
 	class_addmethod(c, (method)vbap_bang, "bang", 0);
-	class_addmethod(c, (method)vbap_int, "int", A_LONG, 0);
-	class_addmethod(c, (method)vbap_float, "float", A_FLOAT, 0);
+	class_addmethod(c, (method)vbap_in1, "in1", A_LONG, 0);
+    class_addmethod(c, (method)vbap_in2, "in2", A_LONG, 0);
+    class_addmethod(c, (method)vbap_in3, "in3", A_LONG, 0);
+	class_addmethod(c, (method)vbap_ft4, "ft4", A_FLOAT, 0);
 	class_addmethod(c, (method)vbap_matrix, "loudspeaker-matrices", A_GIMME, 0);
 	class_addmethod(c, (method)traces, "enabletrace", A_LONG, 0);
 
@@ -110,40 +110,8 @@ void vbap_in2(t_vbap *x, long n) { x->x_ele = n; }
 // spread amount
 void vbap_in3(t_vbap *x, long n) { x->x_spread = (n<0) ? 0 : (n>100) ? 100 : n; }
 /*--------------------------------------------------------------------------*/
-void vbap_int(t_vbap *x, long n)
-{
-    long in = proxy_getinlet((t_object *)x);
-    
-    switch (in)
-    {// if right inlet
-        case 0:
-            vbap_in1(x,n);
-            break;
-        case 1:
-            vbap_in2(x,n);
-            break;
-        case 2:
-            vbap_in3(x,n);
-            break;
-        default:
-            post("inlet does not accept int");
-    }
-}
-/*--------------------------------------------------------------------------*/
 // gain control
 void vbap_ft4(t_vbap *x, double g) { x->x_gain = g; }
-/*--------------------------------------------------------------------------*/
-void vbap_float(t_vbap *x, double f)
-{
-    long in = proxy_getinlet((t_object *)x);
-    
-    if (in == 3) // if inlet 4
-    {
-        vbap_ft4(x, f);
-    } else {
-        post("inlet does not accept float");
-    }
-}
 /*--------------------------------------------------------------------------*/
 // create new instance of object... 
 void *vbap_new(long azi,long ele)
