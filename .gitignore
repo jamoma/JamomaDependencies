@@ -4,3 +4,6 @@ JamomaC74.wxs
 *.wixobj
 *.msi
 .DS_Store
+*.xcuserstate
+*.xcscheme
+xcschememanagement.plist
