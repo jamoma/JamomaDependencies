@@ -108,8 +108,36 @@ void vbap_in2(t_vbap *x, long n) { x->x_ele = n; }
 // spread amount
 void vbap_in3(t_vbap *x, long n) { x->x_spread = (n<0) ? 0 : (n>100) ? 100 : n; }
 /*--------------------------------------------------------------------------*/
+void vbap_int(t_vbap *x, long n)
+{
+    switch (x->x_obj.z_in)
+    {// if right inlet
+        case 0:
+            vbap_in1(x,n);
+            break;
+        case 1:
+            vbap_in2(x,n);
+            break;
+        case 2:
+            vbap_in3(x,n);
+            break;
+        default:
+            post("inlet does not accept int");
+    }
+}
+/*--------------------------------------------------------------------------*/
 // gain control
 void vbap_ft4(t_vbap *x, double g) { x->x_gain = g; }
+/*--------------------------------------------------------------------------*/
+void vbap_float(t_vbap *x, double f)
+{
+    if (x->x_obj.z_in == 3) // if inlet 4
+    {
+        vbap_ft4(x, f);
+    } else {
+        post("inlet does not accept float");
+    }
+}
 /*--------------------------------------------------------------------------*/
 // create new instance of object... 
 void *vbap_new(long azi,long ele)
