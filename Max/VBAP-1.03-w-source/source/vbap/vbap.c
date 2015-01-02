@@ -18,7 +18,7 @@ void new_spread_base(t_vbap *x, float spreaddir[3], float vscartdir[3]);
 void vect_cross_prod(float v1[3], float v2[3],float v3[3]);
 void additive_vbap(float *final_gs, float cartdir[3], t_vbap *x);
 void vbap_bang(t_vbap *x);
-void vbap_matrix(t_vbap *x, Symbol *s, int ac, Atom *av);
+void vbap_matrix(t_vbap *x, t_symbol *s, int ac, t_atom *av);
 void vbap_in1(t_vbap *x, long n);
 void vbap_in2(t_vbap *x, long n);
 void vbap_in3(t_vbap *x, long n);
@@ -534,7 +534,7 @@ void spread_it(t_vbap *x, float *final_gs)
 void vbap_bang(t_vbap *x)			
 // top level, vbap gains are calculated and outputted	
 {
-	Atom at[MAX_LS_AMOUNT]; 
+	t_atom at[MAX_LS_AMOUNT]; 
 	float g[3];
 	long ls[3];
 	long i;
@@ -572,7 +572,7 @@ void vbap_bang(t_vbap *x)
 
 /*--------------------------------------------------------------------------*/
 
-void vbap_matrix(t_vbap *x, Symbol *s, int ac, Atom *av)
+void vbap_matrix(t_vbap *x, t_symbol *s, int ac, t_atom *av)
 // read in loudspeaker matrices
 {
 	int datapointer = 0; 
