@@ -595,8 +595,8 @@ void  calculate_3x3_matrixes(t_def_ls *x)
   list_length= triplet_amount * 21 + 3;
   at= (Atom *) getbytes(list_length*sizeof(Atom));
   
-  SETLONG(&at[0], x->x_def_ls_dimension);
-  SETLONG(&at[1], x->x_def_ls_amount);
+  atom_setlong(&at[0], x->x_def_ls_dimension);
+  atom_setlong(&at[1], x->x_def_ls_amount);
   pointer=2;
   
   while(tr_ptr != NULL){
@@ -620,22 +620,22 @@ void  calculate_3x3_matrixes(t_def_ls *x)
     invmx[5] = ((lp1->x * lp3->y) - (lp1->y * lp3->x)) * -invdet;
     invmx[8] = ((lp1->x * lp2->y) - (lp1->y * lp2->x)) * invdet;
     for(i=0;i<3;i++){
-    	SETLONG(&at[pointer], tr_ptr->ls_nos[i]+1);
+    	atom_setlong(&at[pointer], tr_ptr->ls_nos[i]+1);
     	pointer++;
     }
     for(i=0;i<9;i++){
-    	SETFLOAT(&at[pointer], invmx[i]);
+    	atom_setfloat(&at[pointer], invmx[i]);
     	pointer++;
     }
-    SETFLOAT(&at[pointer], lp1->x); pointer++;
-    SETFLOAT(&at[pointer], lp2->x); pointer++;
-    SETFLOAT(&at[pointer], lp3->x); pointer++;
-    SETFLOAT(&at[pointer], lp1->y); pointer++;
-    SETFLOAT(&at[pointer], lp2->y); pointer++;
-    SETFLOAT(&at[pointer], lp3->y); pointer++;
-    SETFLOAT(&at[pointer], lp1->z); pointer++;
-    SETFLOAT(&at[pointer], lp2->z); pointer++;
-    SETFLOAT(&at[pointer], lp3->z); pointer++;
+    atom_setfloat(&at[pointer], lp1->x); pointer++;
+    atom_setfloat(&at[pointer], lp2->x); pointer++;
+    atom_setfloat(&at[pointer], lp3->x); pointer++;
+    atom_setfloat(&at[pointer], lp1->y); pointer++;
+    atom_setfloat(&at[pointer], lp2->y); pointer++;
+    atom_setfloat(&at[pointer], lp3->y); pointer++;
+    atom_setfloat(&at[pointer], lp1->z); pointer++;
+    atom_setfloat(&at[pointer], lp2->z); pointer++;
+    atom_setfloat(&at[pointer], lp3->z); pointer++;
  
     tr_ptr = tr_ptr->next;
   }
@@ -702,37 +702,37 @@ void choose_ls_tuplets(t_def_ls *x)
   list_length= amount * 10  + 2;
   at= (Atom *) getbytes(list_length*sizeof(Atom));
   
-  SETLONG(&at[0], x->x_def_ls_dimension);
-  SETLONG(&at[1], x->x_def_ls_amount);
+  atom_setlong(&at[0], x->x_def_ls_dimension);
+  atom_setlong(&at[1], x->x_def_ls_amount);
   pointer=2;
   
   for (i=0;i<ls_amount - 1;i++){
     if(exist[i] == 1) {
-    	SETLONG(&at[pointer], sorted_lss[i]+1);
+    	atom_setlong(&at[pointer], sorted_lss[i]+1);
     	pointer++;
-    	SETLONG(&at[pointer], sorted_lss[i+1]+1);
+    	atom_setlong(&at[pointer], sorted_lss[i+1]+1);
     	pointer++;
        	for(j=0;j<4;j++) {
-       		SETFLOAT(&at[pointer], inv_mat[i][j]);
+       		atom_setfloat(&at[pointer], inv_mat[i][j]);
     		pointer++;
        	}
        for(j=0;j<4;j++) {
-       		SETFLOAT(&at[pointer], mat[i][j]);
+       		atom_setfloat(&at[pointer], mat[i][j]);
     		pointer++;
        	}
     }
   }
   if(exist[ls_amount-1] == 1) {
-    SETLONG(&at[pointer], sorted_lss[ls_amount-1]+1);
+    atom_setlong(&at[pointer], sorted_lss[ls_amount-1]+1);
     pointer++;
-    SETLONG(&at[pointer], sorted_lss[0]+1);
+    atom_setlong(&at[pointer], sorted_lss[0]+1);
     pointer++;
     for(j=0;j<4;j++) {
-    	SETFLOAT(&at[pointer], inv_mat[ls_amount-1][j]);
+    	atom_setfloat(&at[pointer], inv_mat[ls_amount-1][j]);
     	pointer++;
     }
     for(j=0;j<4;j++) {
-    	SETFLOAT(&at[pointer], mat[ls_amount-1][j]);
+    	atom_setfloat(&at[pointer], mat[ls_amount-1][j]);
     	pointer++;
     }
   }

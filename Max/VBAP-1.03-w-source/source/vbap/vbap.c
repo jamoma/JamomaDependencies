@@ -555,8 +555,8 @@ void vbap_bang(t_vbap *x)
 		}
 		for(i=0;i<x->x_ls_amount;i++) 
 		{
-			SETLONG(&at[0], i);	
-			SETFLOAT(&at[1], final_gs[i]*x->x_gain); // gain is applied here
+			atom_setlong(&at[0], i);
+			atom_setfloat(&at[1], final_gs[i]*x->x_gain); // gain is applied here
 			outlet_list(x->x_outlet0, 0L, 2, at);
 		}
 		outlet_int(x->x_outlet1, x->x_azi); 
