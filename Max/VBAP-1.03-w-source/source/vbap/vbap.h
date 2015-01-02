@@ -15,6 +15,7 @@
 
 #define VBAP_VERSION "vbap - v1.0.3 - 12 Aug 2006 - (c) Ville Pulkki 1999-2006"
 #define DFLS_VERSION "define_loudspeakers - v1.0.3 - 12 Aug 2006 - (c) Ville Pulkki 1999-2006"
+#define JAMOMA_UPDATE "64-bit update for Jamoma by Nathan Wolek, 2015"
 
 static float rad2ang = 360.0 / ( 2.0f * M_PI );
 static float atorad = (2.0f * M_PI) / 360.0f ;

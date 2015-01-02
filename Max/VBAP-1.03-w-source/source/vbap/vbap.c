@@ -95,6 +95,7 @@ int C74_EXPORT main(void)
     vbap_class = c;
     
 	post(VBAP_VERSION);
+    post(JAMOMA_UPDATE);
     
     return 0;
     

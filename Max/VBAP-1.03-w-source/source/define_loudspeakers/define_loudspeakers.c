@@ -27,6 +27,7 @@ int C74_EXPORT main(void)
     def_ls_class = c;
     
 	post(DFLS_VERSION);
+    post(JAMOMA_UPDATE);
     
     return 0;
 }
