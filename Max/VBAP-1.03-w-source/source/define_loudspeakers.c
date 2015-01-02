@@ -167,7 +167,7 @@ void ls_angles_to_cart(t_ls *ls)
 void *def_ls_new(t_symbol *s, int ac, Atom *av)	
 {
 	// s is object name (we ignore it)
-	t_def_ls *x = (t_def_ls *)newobject(def_ls_class);
+	t_def_ls *x = (t_def_ls *) object_alloc((t_class*) (def_ls_class);
 
 	x->x_outlet0 =  outlet_new(x, 0L);	/* create a (list) outlet */
 
