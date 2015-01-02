@@ -142,7 +142,7 @@ void vbap_float(t_vbap *x, double f)
 // create new instance of object... 
 void *vbap_new(long azi,long ele)
 {
-	t_vbap *x = (t_vbap *) object_alloc((t_class*) (vbap_class);
+	t_vbap *x = (t_vbap *) object_alloc((t_class*) (vbap_class));
 
 	floatin(x,4);	
 	intin(x,3);	
