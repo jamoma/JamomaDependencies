@@ -69,27 +69,33 @@ void vbap_assist(t_vbap *x, void *b, long m, long a, char *s)
 
 /* above are the prototypes for the methods/procedures/functions you will use */
 /*--------------------------------------------------------------------------*/
-void main(void)
+int C74_EXPORT main(void)
 {
-	setup((t_messlist **)&vbap_class, (method)vbap_new, 0L, (short)sizeof(t_vbap), 0L, A_DEFLONG,A_DEFLONG, 0); 
+    t_class *c;
+    
+    c = class_new("vbap", (method)vbap_new, 0L, (short)sizeof(t_vbap), 0L, A_DEFLONG,A_DEFLONG, 0);
 
-	addbang((method)vbap_bang);	
-	addinx((method)vbap_in1, 1);
-	addinx((method)vbap_in2, 2);
-	addinx((method)vbap_in3, 3);
-	addftx((method)vbap_ft4, 4);
-	addmess((method)vbap_matrix, "loudspeaker-matrices", A_GIMME, 0);
-	addmess((method)traces, "enabletrace", A_LONG, 0);
+	class_addmethod(c, (method)vbap_bang, "bang", 0);
+	class_addmethod(c, (method)vbap_int, "int", A_LONG, 0);
+	class_addmethod(c, (method)vbap_float, "float", A_FLOAT, 0);
+	class_addmethod(c, (method)vbap_matrix, "loudspeaker-matrices", A_GIMME, 0);
+	class_addmethod(c, (method)traces, "enabletrace", A_LONG, 0);
 
 	// define_loudspeaker messages
-	addmess((method)vbap_def_ls, "define-loudspeakers", A_GIMME, 0);
-	addmess((method)vbap_def_ls, "define_loudspeakers", A_GIMME, 0);
-	addmess((method)def_ls_read_directions, "ls-directions", A_GIMME, 0);	
-	addmess((method)def_ls_read_triplets, "ls-triplets", A_GIMME, 0);
+	class_addmethod(c, (method)vbap_def_ls, "define-loudspeakers", A_GIMME, 0);
+	class_addmethod(c, (method)vbap_def_ls, "define_loudspeakers", A_GIMME, 0);
+	class_addmethod(c, (method)def_ls_read_directions, "ls-directions", A_GIMME, 0);
+	class_addmethod(c, (method)def_ls_read_triplets, "ls-triplets", A_GIMME, 0);
 
-	addmess((method)vbap_assist,"assist",A_CANT,0);
+	class_addmethod(c, (method)vbap_assist,"assist",A_CANT,0);
 
+    class_register(CLASS_BOX, c); // register the class w max
+    vbap_class = c;
+    
 	post(VBAP_VERSION);
+    
+    return 0;
+    
 }
 
 /*--------------------------------------------------------------------------*/

@@ -11,17 +11,24 @@ See copyright in file with name COPYRIGHT  */
 
 #ifndef VBAP_OBJECT
 // If we are within VBAP (which includes define_loudspeakers), then don't create a main for define_loudspeakres
-void main(void)
+int C74_EXPORT main(void)
 {
-	setup((t_messlist **)&def_ls_class, (method)def_ls_new, 0L, (short)sizeof(t_def_ls), 0L, A_GIMME, 0); 
+    t_class *c;
+    
+    c = class_new("define_loudspeakers", (method)def_ls_new, 0L, (short)sizeof(t_def_ls), 0L, A_GIMME, 0);
 	/* def_ls_new = creation function, A_DEFLONG = its (optional) arguement is a long (32-bit) int */
 	
-	addbang((method)def_ls_bang);			/* the procedure it uses when it gets a bang in the left inlet */
-	addmess((method)def_ls_read_directions, "ls-directions", A_GIMME, 0);	
-	addmess((method)def_ls_read_triplets, "ls-triplets", A_GIMME, 0);
-	addmess((method)traces, "enabletrace", A_LONG, 0);
+	class_addmethod(c, (method)def_ls_bang, "bang", 0);			/* the procedure it uses when it gets a bang in the left inlet */
+	class_addmethod(c, (method)def_ls_read_directions, "ls-directions", A_GIMME, 0);
+	class_addmethod(c, (method)def_ls_read_triplets, "ls-triplets", A_GIMME, 0);
+	class_addmethod(c, (method)traces, "enabletrace", A_LONG, 0);
 
+    class_register(CLASS_BOX, c); // register the class w max
+    def_ls_class = c;
+    
 	post(DFLS_VERSION);
+    
+    return 0;
 }
 #endif
 
