@@ -36,7 +36,7 @@ typedef struct _shell
 	short		flag;	//flag to prevent additional input while we're working
 } t_shell;
 
-void *shell_class;
+t_class *shell_class;
 
 char* itoa( int value , char* buffer , int radix ); 
 
@@ -55,7 +55,7 @@ void shell_free(t_shell *x);
 void *shell_new(void);
 
 typedef void *(*t_mp)(void *x,...); //pointer to method
-typedef void *(*t_fpv)(void); //pointer to void function
+typedef void *(*t_fpv)(void); //pointer to void function returning void *
 
 //function pointers for calling Mach-O (from CFM)
 //lazily using t_mp for convenience, but could use more 
@@ -103,22 +103,21 @@ UInt32 template[6] = {0x3D800000, 0x618C0000, 0x800C0000, 0x804C0004, 0x7C0903A6
 void	*MachOFunctionPointerForCFMFunctionPointer( void *cfmfp );
 #endif
 
-void main(void)
+int main(void)
 {
 #if !TARGET_RT_MAC_MACHO
     OSStatus err;
 	CFBundleRef sysBundle;
     CFBundleRef bundle=NULL;
 #endif
-	setup((t_messlist **)&shell_class, (method)shell_new, (method)shell_free, (short)sizeof(t_shell), 0L, 0); 
+	shell_class = class_new("shell", (method)shell_new, (method)shell_free, sizeof(t_shell), 0L, 0);
 	
-	//addbang((method)shell_bang);
-	addbang((method)shell_bang);
-    addmess((method)shell_kill,"pkill",0);
-    addmess((method)shell_assist,"assist",A_CANT,0);
-    addmess((method)shell_anything,"anything",A_GIMME,0); 
- 	addmess((method)doReport, "dblclick",A_CANT,0);   
-    
+	class_addmethod(shell_class, (method)shell_bang, "bang", 0);
+	class_addmethod(shell_class, (method)shell_kill, "pkill", 0);
+	class_addmethod(shell_class, (method)shell_anything, "anything", A_GIMME, 0);
+	class_addmethod(shell_class, (method)shell_assist, "assist", A_CANT, 0);
+	class_addmethod(shell_class, (method)doReport, "dblclick", A_CANT, 0);
+
 #if !TARGET_RT_MAC_MACHO
     //load pthread function pointers
     if (bundle = CFBundleGetBundleWithIdentifier(CFSTR("com.apple.Carbon")))
@@ -126,7 +125,7 @@ void main(void)
 		fp_pthread_create 		= (t_mp) CFBundleGetFunctionPointerForName(bundle, CFSTR("pthread_create"));
 		fp_pthread_kill 		= (t_mp) CFBundleGetFunctionPointerForName(bundle, CFSTR("pthread_kill"));
 		fp_pthread_testcancel 	= (t_fpv) CFBundleGetFunctionPointerForName(bundle, CFSTR("pthread_testcancel"));
-		fp_pthread_cancel	 	= (t_fpv) CFBundleGetFunctionPointerForName(bundle, CFSTR("pthread_cancel"));
+		fp_pthread_cancel	 	= (t_mp) CFBundleGetFunctionPointerForName(bundle, CFSTR("pthread_cancel"));
 		fp_pthread_join 		= (t_mp) CFBundleGetFunctionPointerForName(bundle, CFSTR("pthread_join"));
 		fp_pthread_exit 		= (t_mp) CFBundleGetFunctionPointerForName(bundle, CFSTR("pthread_exit"));
 		fp_usleep 				= (t_mp) CFBundleGetFunctionPointerForName(bundle, CFSTR("usleep"));
@@ -148,7 +147,7 @@ void main(void)
 	fp_pthread_create		= (t_mp)pthread_create;
 	fp_pthread_kill 		= (t_mp)pthread_kill;
 	fp_pthread_testcancel 	= (t_fpv)pthread_testcancel;
-	fp_pthread_cancel	 	= (t_fpv)pthread_cancel;
+	fp_pthread_cancel	 	= (t_mp)pthread_cancel;
 	fp_pthread_join 		= (t_mp)pthread_join;
 	fp_pthread_exit 		= (t_mp)pthread_exit;
 	fp_usleep 				= (t_mp)usleep;
@@ -163,6 +162,8 @@ void main(void)
 	BSDpclose		= (BSDpcloseFuncPtr)pclose;
 	BSDfgets		= (BSDfgetsFuncPtr)fgets;
 #endif
+	class_register(CLASS_BOX, shell_class);
+	return 0;
 }
 
 void shell_anything(t_shell *x,t_symbol *s, long argc, t_atom *argv)
@@ -185,7 +186,7 @@ void shell_anything(t_shell *x,t_symbol *s, long argc, t_atom *argv)
 	        switch (argv[z].a_type)
 	        {
 	            case A_LONG:
-					sprintf(num, "%ld", argv[z].a_w.w_long);
+					sprintf(num, "%ld", (long)argv[z].a_w.w_long);
 //					itoa(argv[z].a_w.w_long,num,10);
 	              	strcpy(x->cmdBuf+i,num);
 					i=strlen(num)+i+1;
@@ -353,13 +354,15 @@ void *shell_new(void)
 		return NULL;
 	}
 	
-	x = (t_shell *)newobject(shell_class);
-	x->x_outlet2 = bangout(x);
-	x->x_outlet = outlet_new(x,NULL);
-	x->x_qelem = qelem_new(x,(method)shell_qfn);
-	x->x_qelem2 = qelem_new(x,(method)shell_out);
-	x->x_pthread = NULL;
-	x->flag=0;
+	x = (t_shell *)object_alloc(shell_class);
+	if (x) {
+		x->x_outlet2 = bangout(x);
+		x->x_outlet = outlet_new(x,NULL);
+		x->x_qelem = qelem_new(x,(method)shell_qfn);
+		x->x_qelem2 = qelem_new(x,(method)shell_out);
+		x->x_pthread = NULL;
+		x->flag=0;
+	}
 	return(x);
 }
 
