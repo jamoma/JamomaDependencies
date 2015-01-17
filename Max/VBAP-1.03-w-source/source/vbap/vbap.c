@@ -166,7 +166,7 @@ void cart_to_angle(float cvec[3], float avec[3])
     atan_y_per_x = atan(cvec[1] / cvec[0]);
   azi = atan_y_per_x / atorad;
   if(cvec[0]<0.0)
-    azi +=180;
+    azi +=180.0;
   dist = sqrt(cvec[0]*cvec[0] + cvec[1]*cvec[1]);
   if(cvec[2]==0.0)
     atan_x_pl_y_per_z = 0.0;
@@ -202,19 +202,19 @@ void vbap(float g[3], long ls[3], t_vbap *x)
   long neg_g_am, best_neg_g_am;
   
   // transfering the azimuth angle to a decent value
-  while(x->x_azi > 180)
-  	x->x_azi -= 360;
-  while(x->x_azi < -179)
-  	x->x_azi += 360;
+  while(x->x_azi > 180.0)
+  	x->x_azi -= 360.0;
+  while(x->x_azi < -179.9999999999)
+  	x->x_azi += 360.0;
   	
   // transferring the elevation to a decent value
   if(dim == 3){
-  	while(x->x_ele > 180)
-  		x->x_ele -= 360;
-  	while(x->x_ele < -179)
-  		x->x_ele += 360;
+  	while(x->x_ele > 180.0)
+  		x->x_ele -= 360.0;
+  	while(x->x_ele < -179.9999999999)
+  		x->x_ele += 360.0;
   } else
-  	x->x_ele = 0;
+  	x->x_ele = 0.0;
   
   
   // go through all defined loudspeaker sets and find the set which
@@ -389,7 +389,7 @@ void new_spread_dir(t_vbap *x, float spreaddir[3], float vscartdir[3], float spr
 					vscartdir[1] * spread_base[1] +
 					vscartdir[2] * spread_base[2])/M_PI*180;
 	if(fabs(gamma) < 1){
-		angle_to_cart(x->x_azi+90, 0, spread_base);
+		angle_to_cart(x->x_azi+90.0, 0, spread_base);
 		gamma = acos(vscartdir[0] * spread_base[0] +
 					vscartdir[1] * spread_base[1] +
 					vscartdir[2] * spread_base[2])/M_PI*180;
