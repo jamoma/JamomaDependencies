@@ -127,13 +127,13 @@ void *vbap_new(long azi,long ele)
 
 	floatin(x,4);	
 	intin(x,3);	
-	intin(x,2);					
-	intin(x,1);					
+	floatin(x,2);
+	floatin(x,1);
 
 	x->x_outlet4 = floatout(x);
 	x->x_outlet3 = intout(x);
-	x->x_outlet2 = intout(x);
-	x->x_outlet1 = intout(x);
+	x->x_outlet2 = floatout(x);
+	x->x_outlet1 = floatout(x);
 	x->x_outlet0 = listout(x);
 	
 	x->x_spread_base[0] = 0.0;
@@ -534,8 +534,8 @@ void vbap_bang(t_vbap *x)
 			atom_setfloat(&at[1], final_gs[i]*x->x_gain); // gain is applied here
 			outlet_list(x->x_outlet0, 0L, 2, at);
 		}
-		outlet_int(x->x_outlet1, x->x_azi); 
-		outlet_int(x->x_outlet2, x->x_ele); 
+		outlet_float(x->x_outlet1, x->x_azi);
+		outlet_float(x->x_outlet2, x->x_ele);
 		outlet_int(x->x_outlet3, x->x_spread); 
 		outlet_int(x->x_outlet4, x->x_gain); 
 	}
