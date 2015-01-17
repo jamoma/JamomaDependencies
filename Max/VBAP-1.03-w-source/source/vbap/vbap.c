@@ -210,14 +210,14 @@ void vbap(float g[3], long ls[3], t_vbap *x)
   // transfering the azimuth angle to a decent value
   while(x->x_azi > 180.0)
   	x->x_azi -= 360.0;
-  while(x->x_azi < -179.9999999999)
+  while(x->x_azi <= -180.0)
   	x->x_azi += 360.0;
   	
   // transferring the elevation to a decent value
   if(dim == 3){
   	while(x->x_ele > 180.0)
   		x->x_ele -= 360.0;
-  	while(x->x_ele < -179.9999999999)
+  	while(x->x_ele <= -180.0)
   		x->x_ele += 360.0;
   } else
   	x->x_ele = 0.0;
