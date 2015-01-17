@@ -26,7 +26,7 @@ void vbap_ft4(t_vbap *x, double g);
 void spread_it(t_vbap *x, float *final_gs);
 void *vbap_new(long azi,long ele);
 void vbap(float g[3], long ls[3], t_vbap *x);
-void angle_to_cart(long azi, long ele, float res[3]);
+void angle_to_cart(double azi, double ele, float res[3]);
 void cart_to_angle(float cvec[3], float avec[3]);
 
 static t_class *vbap_class;		// required global pointer to this class
@@ -144,12 +144,12 @@ void *vbap_new(long azi,long ele)
 }
 
 
-void angle_to_cart(long azi, long ele, float res[3])
+void angle_to_cart(double azi, double ele, float res[3])
 // converts angular coordinates to cartesian
-{ 
-  res[0] = cos((float) azi * atorad) * cos((float) ele * atorad);
-  res[1] = sin((float) azi * atorad) * cos((float) ele * atorad);
-  res[2] = sin((float) ele * atorad);
+{
+    res[0] = cos(azi * atorad) * cos(ele * atorad);
+    res[1] = sin(azi * atorad) * cos(ele * atorad);
+    res[2] = sin(ele * atorad);
 }
 
 void cart_to_angle(float cvec[3], float avec[3])
