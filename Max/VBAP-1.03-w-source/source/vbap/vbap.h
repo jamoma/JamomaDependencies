@@ -55,8 +55,8 @@ typedef struct t_ls_set
 	typedef struct vbap				/* This defines the object as an entity made up of other things */
 	{
 		t_object x_ob;
-		long x_azi; 	// panning direction azimuth
-		long x_ele;		// panning direction elevation			
+		double x_azi; 	// panning direction azimuth
+		double x_ele;		// panning direction elevation
 		void *x_outlet0;				/* outlet creation - inlets are automatic */
 		void *x_outlet1;				
 		void *x_outlet2;				
