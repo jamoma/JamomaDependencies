@@ -24,6 +24,7 @@ void vbap_ft1(t_vbap *x, double n);
 void vbap_in2(t_vbap *x, long n);
 void vbap_ft2(t_vbap *x, double n);
 void vbap_in3(t_vbap *x, long n);
+void vbap_ft3(t_vbap *x, double n);
 void vbap_ft4(t_vbap *x, double g);
 void spread_it(t_vbap *x, float *final_gs);
 void *vbap_new(long azi,long ele);
@@ -83,6 +84,7 @@ int C74_EXPORT main(void)
     class_addmethod(c, (method)vbap_in2, "in2", A_LONG, 0);
     class_addmethod(c, (method)vbap_ft2, "ft2", A_FLOAT, 0);
     class_addmethod(c, (method)vbap_in3, "in3", A_LONG, 0);
+    class_addmethod(c, (method)vbap_ft3, "ft3", A_FLOAT, 0);
 	class_addmethod(c, (method)vbap_ft4, "ft4", A_FLOAT, 0);
 	class_addmethod(c, (method)vbap_matrix, "loudspeaker-matrices", A_GIMME, 0);
 	class_addmethod(c, (method)traces, "enabletrace", A_LONG, 0);
@@ -116,6 +118,7 @@ void vbap_ft2(t_vbap *x, double n) { x->x_ele = n; }
 /*--------------------------------------------------------------------------*/
 // spread amount
 void vbap_in3(t_vbap *x, long n) { x->x_spread = (n<0) ? 0 : (n>100) ? 100 : n; }
+void vbap_ft3(t_vbap *x, double n) { x->x_spread = (n<0.0) ? 0.0 : (n>100.0) ? 100.0 : n; }
 /*--------------------------------------------------------------------------*/
 // gain control
 void vbap_ft4(t_vbap *x, double g) { x->x_gain = g; }
@@ -126,12 +129,12 @@ void *vbap_new(long azi,long ele)
 	t_vbap *x = (t_vbap *) object_alloc((t_class*) (vbap_class));
 
 	floatin(x,4);	
-	intin(x,3);	
+	floatin(x,3);
 	floatin(x,2);
 	floatin(x,1);
 
 	x->x_outlet4 = floatout(x);
-	x->x_outlet3 = intout(x);
+	x->x_outlet3 = floatout(x);
 	x->x_outlet2 = floatout(x);
 	x->x_outlet1 = floatout(x);
 	x->x_outlet0 = listout(x);
@@ -139,7 +142,7 @@ void *vbap_new(long azi,long ele)
 	x->x_spread_base[0] = 0.0;
 	x->x_spread_base[1] = 1.0;
 	x->x_spread_base[2] = 0.0;
-	x->x_spread = 0;
+	x->x_spread = 0.0;
 	x->x_lsset_available =0;
 
 	x->x_azi = azi;
@@ -536,8 +539,8 @@ void vbap_bang(t_vbap *x)
 		}
 		outlet_float(x->x_outlet1, x->x_azi);
 		outlet_float(x->x_outlet2, x->x_ele);
-		outlet_int(x->x_outlet3, x->x_spread); 
-		outlet_int(x->x_outlet4, x->x_gain); 
+		outlet_float(x->x_outlet3, x->x_spread); 
+		outlet_float(x->x_outlet4, x->x_gain);
 	}
 	else
 		error("vbap: Configure loudspeakers first!");

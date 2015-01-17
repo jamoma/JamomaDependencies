@@ -69,7 +69,7 @@ typedef struct t_ls_set
 		long x_lsset_amount;								   // amount of loudspeaker sets
 		long x_ls_amount;                      // amount of loudspeakers
 		long x_dimension;                      // 2 or 3
-		long x_spread;                         // speading amount of virtual source (0-100)
+		double x_spread;                         // speading amount of virtual source (0-100)
 		double x_gain;                         // general gain control (0-2)
 		float x_spread_base[3];                // used to create uniform spreading
 
