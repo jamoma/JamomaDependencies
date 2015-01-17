@@ -27,7 +27,7 @@ void vbap_in3(t_vbap *x, long n);
 void vbap_ft3(t_vbap *x, double n);
 void vbap_ft4(t_vbap *x, double g);
 void spread_it(t_vbap *x, float *final_gs);
-void *vbap_new(long azi,long ele);
+void *vbap_new(double azi,double ele);
 void vbap(float g[3], long ls[3], t_vbap *x);
 void angle_to_cart(double azi, double ele, float res[3]);
 void cart_to_angle(float cvec[3], float avec[3]);
@@ -124,7 +124,7 @@ void vbap_ft3(t_vbap *x, double n) { x->x_spread = (n<0.0) ? 0.0 : (n>100.0) ? 1
 void vbap_ft4(t_vbap *x, double g) { x->x_gain = g; }
 /*--------------------------------------------------------------------------*/
 // create new instance of object... 
-void *vbap_new(long azi,long ele)
+void *vbap_new(double azi,double ele)
 {
 	t_vbap *x = (t_vbap *) object_alloc((t_class*) (vbap_class));
 
@@ -404,8 +404,8 @@ void new_spread_dir(t_vbap *x, float spreaddir[3], float vscartdir[3], float spr
 					vscartdir[2] * spread_base[2])/M_PI*180;
 	}
 	beta = 180 - gamma;
-	b=sin(x->x_spread * M_PI / 180) / sin(beta * M_PI / 180);
-	a=sin((180- x->x_spread - beta) * M_PI / 180) / sin (beta * M_PI / 180);
+	b=sin(x->x_spread * M_PI / 180.0) / sin(beta * M_PI / 180.0);
+	a=sin((180.0 - x->x_spread - beta) * M_PI / 180.0) / sin (beta * M_PI / 180.0);
 	spreaddir[0] = a * vscartdir[0] + b * spread_base[0];
 	spreaddir[1] = a * vscartdir[1] + b * spread_base[1];
 	spreaddir[2] = a * vscartdir[2] + b * spread_base[2];
@@ -423,7 +423,7 @@ void new_spread_base(t_vbap *x, float spreaddir[3], float vscartdir[3])
 	float d;
 	float power;
 	
-	d = cos(x->x_spread/180*M_PI);
+	d = cos(x->x_spread/180.0*M_PI);
 	x->x_spread_base[0] = spreaddir[0] - d * vscartdir[0];
 	x->x_spread_base[1] = spreaddir[1] - d * vscartdir[1];
 	x->x_spread_base[2] = spreaddir[2] - d * vscartdir[2];
@@ -482,10 +482,10 @@ void spread_it(t_vbap *x, float *final_gs)
 		spreaddirnum=6;		
 		
 		angle_to_cart(x->x_azi - x->x_spread, 0, spreaddir[0]);
-		angle_to_cart(x->x_azi - x->x_spread/2, 0, spreaddir[1]);
-		angle_to_cart(x->x_azi - x->x_spread/4, 0, spreaddir[2]);
-		angle_to_cart(x->x_azi + x->x_spread/4, 0, spreaddir[3]);
-		angle_to_cart(x->x_azi + x->x_spread/2, 0, spreaddir[4]);
+		angle_to_cart(x->x_azi - x->x_spread/2.0, 0, spreaddir[1]);
+		angle_to_cart(x->x_azi - x->x_spread/4.0, 0, spreaddir[2]);
+		angle_to_cart(x->x_azi + x->x_spread/4.0, 0, spreaddir[3]);
+		angle_to_cart(x->x_azi + x->x_spread/2.0, 0, spreaddir[4]);
 		angle_to_cart(x->x_azi + x->x_spread, 0, spreaddir[5]);
 		
 		for(i=0;i<spreaddirnum;i++)
@@ -493,9 +493,9 @@ void spread_it(t_vbap *x, float *final_gs)
 	} else
 		return;
 		
-	if(x->x_spread > 70)
+	if(x->x_spread > 70.0)
 		for(i=0;i<x->x_ls_amount;i++){
-			final_gs[i] += (x->x_spread - 70) / 30.0 * (x->x_spread - 70) / 30.0 * 10.0;
+			final_gs[i] += (x->x_spread - 70.0) / 30.0 * (x->x_spread - 70.0) / 30.0 * 10.0;
 		}
 	
 	for(i=0,power=0.0;i<x->x_ls_amount;i++){
@@ -527,7 +527,7 @@ void vbap_bang(t_vbap *x)
 		{
 			final_gs[ls[i]-1]=g[i];  
 		}
-		if(x->x_spread != 0)
+		if(x->x_spread != 0.0)
 		{
 			spread_it(x,final_gs);
 		}
@@ -539,7 +539,7 @@ void vbap_bang(t_vbap *x)
 		}
 		outlet_float(x->x_outlet1, x->x_azi);
 		outlet_float(x->x_outlet2, x->x_ele);
-		outlet_float(x->x_outlet3, x->x_spread); 
+		outlet_float(x->x_outlet3, x->x_spread);
 		outlet_float(x->x_outlet4, x->x_gain);
 	}
 	else
