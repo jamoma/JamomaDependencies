@@ -1,0 +1,1 @@
+This version of the LowkeyNW package was committed to GitHub on 22 July 2015 at [this commit](https://github.com/nwolek/LowkeyNW/commit/2046a713dc5e74ce1a30d9c1eb00ece3649ad30d).
